@@ -436,6 +436,19 @@ typedef NS_ENUM(NSUInteger, GKActionSheetPickerType) {
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
 {
     [self updateSelection];
+    
+    if (self.pickerType == GKActionSheetPickerTypeString) {
+        
+        if ([self.delegate respondsToSelector:@selector(actionSheetPicker:didChangeValue:)]) {
+            [self.delegate actionSheetPicker:self didChangeValue:self.selection];
+        }
+        
+    } else if (self.pickerType == GKActionSheetPickerTypeMultiColumnString) {
+        
+        if ([self.delegate respondsToSelector:@selector(actionSheetPicker:didChangeValue:)]) {
+            [self.delegate actionSheetPicker:self didChangeValue:self.selections];
+        }
+    }
 }
 
 #pragma mark - <UIToolbarDelegat>
@@ -457,12 +470,18 @@ typedef NS_ENUM(NSUInteger, GKActionSheetPickerType) {
     
     if (self.pickerType == GKActionSheetPickerTypeString) {
         
-        [self.delegate actionSheetPicker:self didSelectValue:self.selection];
+        if ([self.delegate respondsToSelector:@selector(actionSheetPicker:didSelectValue:)]) {
+            [self.delegate actionSheetPicker:self didSelectValue:self.selection];
+        }
+        
        self.selectCallback(self.selection);
         
     } else if (self.pickerType == GKActionSheetPickerTypeMultiColumnString) {
         
-        [self.delegate actionSheetPicker:self didSelectValue:self.selections];
+        if ([self.delegate respondsToSelector:@selector(actionSheetPicker:didSelectValue:)]) {
+            [self.delegate actionSheetPicker:self didSelectValue:self.selections];
+        }
+        
         self.selectCallback(self.selections);
     }
 
@@ -471,7 +490,9 @@ typedef NS_ENUM(NSUInteger, GKActionSheetPickerType) {
 
 - (void)cancelButtonPressed:(UIGestureRecognizer *)gestureRecognizer
 {
-    [self.delegate actionSheetPickerDidCancel:self];
+    if ([self.delegate respondsToSelector:@selector(actionSheetPickerDidCancel:)]) {
+        [self.delegate actionSheetPickerDidCancel:self];
+    }
     
     self.cancelCallback();
     

@@ -128,6 +128,7 @@
                     <connections>
                         <outlet property="basicCellDetailLabel" destination="AW9-fr-hsa" id="J02-LQ-pf2"/>
                         <outlet property="dateCellDetailLabel" destination="ADv-Kg-x9Q" id="vDP-bW-Qa5"/>
+                        <outlet property="delegateCellDetailLabel" destination="R3b-OY-iqZ" id="fSI-ca-WfL"/>
                         <outlet property="twoRowsCellDetailLabel" destination="SMz-2e-Egp" id="pmZ-vu-Nmm"/>
                     </connections>
                 </tableViewController>

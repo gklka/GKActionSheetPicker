@@ -9,7 +9,7 @@
 #import "GKTableViewController.h"
 #import "GKActionSheetPicker.h"
 
-@interface GKTableViewController ()
+@interface GKTableViewController () <GKActionSheetPickerDelegate>
 
 // You have to have a strong reference for the picker
 @property (nonatomic, strong) GKActionSheetPicker *picker;
@@ -46,60 +46,84 @@
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 
-    if (indexPath.row == 0) {
-        // Basic
-        
-        // Set the selectable items
-        NSArray *items = @[@"Apple", @"Orange", @"Peach", @"Pearl", @"Tomato"];
-
-        // Create the picker
-        self.picker = [GKActionSheetPicker stringPickerWithItems:items selectCallback:^(id selected) {
-            // This code will be called when the user taps the "OK" button
+    if (indexPath.section == 0) {
+        if (indexPath.row == 0) {
+            // Basic
             
-            self.basicCellDetailLabel.text = (NSString *)selected;
-        
-        } cancelCallback:^{
-            // This code will be called when the user taps cancel
-        }];
-        
-        // Dismiss on tapping the dark overlay layer
-        self.picker.dismissType = GKActionSheetPickerDismissTypeCancel;
-        
-        // Present it
-        [self.picker presentPickerOnView:self.view];
+            // Set the selectable items
+            NSArray *items = @[@"Apple", @"Orange", @"Peach", @"Pearl", @"Tomato"];
 
-        // Set to the previously selected value
-        [self.picker selectValue:self.basicCellSelectedString];
-
-    } else if (indexPath.row == 1) {
-        // Date
-    } else if (indexPath.row == 2) {
-        // Two rows
-
-        // Set the selectable items
-        NSArray *components = @[
-                                @[@"Apple", @"Orange", @"Peach", @"Pearl", @"Tomato"],
-                                @[@"Soup", @"Juice", @"Salad"]
-                                ];
-        
-        // Create the picker
-        self.picker = [GKActionSheetPicker multiColumnStringPickerWithComponents:components selectCallback:^(id selected) {
-            // This code will be called when the user taps the "OK" button
+            // Create the picker
+            self.picker = [GKActionSheetPicker stringPickerWithItems:items selectCallback:^(id selected) {
+                // This code will be called when the user taps the "OK" button
+                
+                self.basicCellDetailLabel.text = (NSString *)selected;
             
-            NSArray *array = (NSArray *)selected;
-            self.twoRowsCellDetailLabel.text = [array componentsJoinedByString:@", "];
+            } cancelCallback:^{
+                // This code will be called when the user taps cancel
+            }];
             
-        } cancelCallback:^{
-            // This code will be called when the user taps cancel
-        }];
-        
-        // Dismiss on tapping the dark overlay layer
-        self.picker.dismissType = GKActionSheetPickerDismissTypeCancel;
-        
-        // Present it
-        [self.picker presentPickerOnView:self.view];
+            // Dismiss on tapping the dark overlay layer
+            self.picker.dismissType = GKActionSheetPickerDismissTypeCancel;
+            
+            // Present it
+            [self.picker presentPickerOnView:self.view];
+
+            // Set to the previously selected value
+            [self.picker selectValue:self.basicCellSelectedString];
+
+        } else if (indexPath.row == 1) {
+            // Date
+        } else if (indexPath.row == 2) {
+            // Two rows
+
+            // Set the selectable items
+            NSArray *components = @[
+                                    @[@"Apple", @"Orange", @"Peach", @"Pearl", @"Tomato"],
+                                    @[@"Soup", @"Juice", @"Salad"]
+                                    ];
+            
+            // Create the picker
+            self.picker = [GKActionSheetPicker multiColumnStringPickerWithComponents:components selectCallback:^(id selected) {
+                // This code will be called when the user taps the "OK" button
+                
+                NSArray *array = (NSArray *)selected;
+                self.twoRowsCellDetailLabel.text = [array componentsJoinedByString:@", "];
+                
+            } cancelCallback:^{
+                // This code will be called when the user taps cancel
+            }];
+            
+            // Dismiss on tapping the dark overlay layer
+            self.picker.dismissType = GKActionSheetPickerDismissTypeCancel;
+            
+            // Present it
+            [self.picker presentPickerOnView:self.view];
+        }
+    } else if (indexPath.section == 1) {
+        if (indexPath.row == 0) {
+            // Delegate
+            
+            // Set the selectable items
+            NSArray *items = @[@"Apple", @"Orange", @"Peach", @"Pearl", @"Tomato"];
+            
+            // Create the picker
+            self.picker = [GKActionSheetPicker stringPickerWithItems:items selectCallback:nil cancelCallback:nil];
+            self.picker.delegate = self;
+            
+            // Present it
+            [self.picker presentPickerOnView:self.view];
+
+            
+        }
     }
 }
 
+#pragma mark - <GKActionSheetPickerDelegate>
+
+- (void)actionSheetPicker:(GKActionSheetPicker *)picker didChangeValue:(id)value
+{
+    self.delegateCellDetailLabel.text = value;
+}
 
 @end
