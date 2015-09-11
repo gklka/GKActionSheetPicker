@@ -1,0 +1,25 @@
+{
+  "name": "GKActionSheetPicker",
+  "version": "0.1.0",
+  "summary": "A short description of GKActionSheetPicker.",
+  "description": "",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/GKActionSheetPicker",
+  "license": "MIT",
+  "authors": {
+    "Gruber Kristóf": "gk@lka.hu"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/GKActionSheetPicker.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/**/*",
+  "resource_bundles": {
+    "GKActionSheetPicker": [
+      "Pod/Assets/*.png"
+    ]
+  }
+}

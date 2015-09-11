@@ -1,0 +1,6 @@
+framework module GKActionSheetPicker {
+  umbrella header "GKActionSheetPicker-umbrella.h"
+
+  export *
+  module * { export * }
+}
