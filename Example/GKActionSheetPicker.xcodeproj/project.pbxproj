@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4780051C1BA1766C0059B241 /* Launch Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4780051B1BA1766C0059B241 /* Launch Screen.xib */; };
+		4780052B1BA1B5570059B241 /* GKTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4780052A1BA1B5570059B241 /* GKTableViewController.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F598195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F596195388D20070C39A /* InfoPlist.strings */; };
 		6003F59A195388D20070C39A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F599195388D20070C39A /* main.m */; };
 		6003F59E195388D20070C39A /* GKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* GKAppDelegate.m */; };
-		6003F5A7195388D20070C39A /* GKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5A6195388D20070C39A /* GKViewController.m */; };
 		6003F5A9195388D20070C39A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A8195388D20070C39A /* Images.xcassets */; };
 		6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F5AF195388D20070C39A /* XCTest.framework */; };
 		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
@@ -40,8 +41,11 @@
 		0A66D6A8EDF7FF302AD598C9 /* GKActionSheetPicker.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = GKActionSheetPicker.podspec; path = ../GKActionSheetPicker.podspec; sourceTree = "<group>"; };
 		16700C494B7A43457E76CBF6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		3D969C76A7034E23EB3D77BD /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		4780051B1BA1766C0059B241 /* Launch Screen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Launch Screen.xib"; sourceTree = "<group>"; };
+		478005291BA1B5570059B241 /* GKTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKTableViewController.h; sourceTree = "<group>"; };
+		4780052A1BA1B5570059B241 /* GKTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKTableViewController.m; sourceTree = "<group>"; };
 		4B952137BA37268233DEA587 /* Pods-GKActionSheetPicker_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GKActionSheetPicker_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GKActionSheetPicker_Tests/Pods-GKActionSheetPicker_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		6003F58A195388D20070C39A /* GKActionSheetPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = GKActionSheetPicker.app; path = GKActionSheetPicker_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6003F58A195388D20070C39A /* GKActionSheetPicker_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GKActionSheetPicker_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		6003F591195388D20070C39A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -51,10 +55,8 @@
 		6003F59B195388D20070C39A /* GKActionSheetPicker-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GKActionSheetPicker-Prefix.pch"; sourceTree = "<group>"; };
 		6003F59C195388D20070C39A /* GKAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GKAppDelegate.h; sourceTree = "<group>"; };
 		6003F59D195388D20070C39A /* GKAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GKAppDelegate.m; sourceTree = "<group>"; };
-		6003F5A5195388D20070C39A /* GKViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GKViewController.h; sourceTree = "<group>"; };
-		6003F5A6195388D20070C39A /* GKViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GKViewController.m; sourceTree = "<group>"; };
 		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		6003F5AE195388D20070C39A /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Tests.xctest; path = GKActionSheetPicker_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6003F5AE195388D20070C39A /* GKActionSheetPicker_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GKActionSheetPicker_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		6003F5B7195388D20070C39A /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -108,8 +110,8 @@
 		6003F58B195388D20070C39A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6003F58A195388D20070C39A /* GKActionSheetPicker.app */,
-				6003F5AE195388D20070C39A /* Tests.xctest */,
+				6003F58A195388D20070C39A /* GKActionSheetPicker_Example.app */,
+				6003F5AE195388D20070C39A /* GKActionSheetPicker_Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -133,9 +135,10 @@
 				6003F59C195388D20070C39A /* GKAppDelegate.h */,
 				6003F59D195388D20070C39A /* GKAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
-				6003F5A5195388D20070C39A /* GKViewController.h */,
-				6003F5A6195388D20070C39A /* GKViewController.m */,
+				4780051B1BA1766C0059B241 /* Launch Screen.xib */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
+				478005291BA1B5570059B241 /* GKTableViewController.h */,
+				4780052A1BA1B5570059B241 /* GKTableViewController.m */,
 				6003F594195388D20070C39A /* Supporting Files */,
 			);
 			name = "Example for GKActionSheetPicker";
@@ -213,7 +216,7 @@
 			);
 			name = GKActionSheetPicker_Example;
 			productName = GKActionSheetPicker;
-			productReference = 6003F58A195388D20070C39A /* GKActionSheetPicker.app */;
+			productReference = 6003F58A195388D20070C39A /* GKActionSheetPicker_Example.app */;
 			productType = "com.apple.product-type.application";
 		};
 		6003F5AD195388D20070C39A /* GKActionSheetPicker_Tests */ = {
@@ -234,7 +237,7 @@
 			);
 			name = GKActionSheetPicker_Tests;
 			productName = GKActionSheetPickerTests;
-			productReference = 6003F5AE195388D20070C39A /* Tests.xctest */;
+			productReference = 6003F5AE195388D20070C39A /* GKActionSheetPicker_Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -277,6 +280,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
+				4780051C1BA1766C0059B241 /* Launch Screen.xib in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
@@ -391,7 +395,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* GKAppDelegate.m in Sources */,
-				6003F5A7195388D20070C39A /* GKViewController.m in Sources */,
+				4780052B1BA1B5570059B241 /* GKTableViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -515,8 +519,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GKActionSheetPicker/GKActionSheetPicker-Prefix.pch";
 				INFOPLIST_FILE = "GKActionSheetPicker/GKActionSheetPicker-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -530,8 +536,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GKActionSheetPicker/GKActionSheetPicker-Prefix.pch";
 				INFOPLIST_FILE = "GKActionSheetPicker/GKActionSheetPicker-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
