@@ -38,7 +38,7 @@
 
 /* Begin PBXFileReference section */
 		07E03E1B2CD04A8CE33577A1 /* Pods-GKActionSheetPicker_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GKActionSheetPicker_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GKActionSheetPicker_Example/Pods-GKActionSheetPicker_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		0A66D6A8EDF7FF302AD598C9 /* GKActionSheetPicker.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = GKActionSheetPicker.podspec; path = ../GKActionSheetPicker.podspec; sourceTree = "<group>"; };
+		0A66D6A8EDF7FF302AD598C9 /* GKActionSheetPicker.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = GKActionSheetPicker.podspec; path = ../GKActionSheetPicker.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		16700C494B7A43457E76CBF6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		3D969C76A7034E23EB3D77BD /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		4780051B1BA1766C0059B241 /* Launch Screen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Launch Screen.xib"; sourceTree = "<group>"; };
