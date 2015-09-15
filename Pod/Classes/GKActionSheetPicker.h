@@ -101,6 +101,15 @@ typedef NS_ENUM(NSUInteger, GKActionSheetPickerDismissType) {
 /**
  Create a new `GKActionSheetPicker` instance with string mode. Please note, that many of the parameters are not included in this initializer function, you have to set them on the created object manually.
  
+ @param items Array of NSStrings or `GKActionSheetPickerItem` objects to display.
+ 
+ @return A new `GKActionSheetPicker` object
+ */
++ (instancetype)stringPickerWithItems:(NSArray *)items;
+
+/**
+ Create a new `GKActionSheetPicker` instance with string mode. Please note, that many of the parameters are not included in this initializer function, you have to set them on the created object manually.
+ 
  @param components Array of values to display in each column. Each array should contain either NSStrings or `GKActionSheetPickerItem` objects.
  @param selectCallback The block to be called when user presses the positive button or taps outside the picker and `dismissType` is `GKActionSheetPickerDismissTypeSelect`.
  @param cancelCallback The block to be called when user presses the negative button or taps outside the picker and `dismissType` is `GKActionSheetPickerDismissTypeCancel`.
@@ -108,6 +117,15 @@ typedef NS_ENUM(NSUInteger, GKActionSheetPickerDismissType) {
  @return A new `GKActionSheetPicker` object
  */
 + (instancetype)multiColumnStringPickerWithComponents:(NSArray *)components selectCallback:(GKActionSheetPickerSelectCallback)selectCallback cancelCallback:(GKActionSheetPickerCancelCallback)cancelCallback;
+
+/**
+ Create a new `GKActionSheetPicker` instance with string mode. Please note, that many of the parameters are not included in this initializer function, you have to set them on the created object manually.
+ 
+ @param components Array of values to display in each column. Each array should contain either NSStrings or `GKActionSheetPickerItem` objects.
+ 
+ @return A new `GKActionSheetPicker` object
+ */
++ (instancetype)multiColumnStringPickerWithComponents:(NSArray *)components;
 
 /**
  Creates a new `GKActionSheetPicker` instance with date mode. Please note, that many of the parameters are not included in this initializer function, you have to set them on the created object manually.
@@ -122,6 +140,18 @@ typedef NS_ENUM(NSUInteger, GKActionSheetPickerDismissType) {
  @return A new `GKActionSheetPicker` object
  */
 + (instancetype)datePickerWithMode:(UIDatePickerMode)datePickerMode from:(NSDate *)minimumDate to:(NSDate *)maximumDate interval:(NSInteger)minuteInterval selectCallback:(GKActionSheetPickerSelectCallback)selectCallback cancelCallback:(GKActionSheetPickerCancelCallback)cancelCallback;
+
+/**
+ Creates a new `GKActionSheetPicker` instance with date mode. Please note, that many of the parameters are not included in this initializer function, you have to set them on the created object manually.
+ 
+ @param datePickerMode See https://developer.apple.com/library/ios/documentation/UIKit/Reference/UIDatePicker_Class/#//apple_ref/occ/instp/UIDatePicker/datePickerMode
+ @param minimumDate See https://developer.apple.com/library/ios/documentation/UIKit/Reference/UIDatePicker_Class/#//apple_ref/occ/instp/UIDatePicker/minimumDate
+ @param maximumDate See https://developer.apple.com/library/ios/documentation/UIKit/Reference/UIDatePicker_Class/#//apple_ref/occ/instp/UIDatePicker/maximumDate
+ @param minuteInterval See https://developer.apple.com/library/ios/documentation/UIKit/Reference/UIDatePicker_Class/#//apple_ref/occ/instp/UIDatePicker/minuteInterval
+ 
+ @return A new `GKActionSheetPicker` object
+ */
++ (instancetype)datePickerWithMode:(UIDatePickerMode)datePickerMode from:(NSDate *)minimumDate to:(NSDate *)maximumDate interval:(NSInteger)minuteInterval;
 
 /**
  Select a value in a multi column string picker.

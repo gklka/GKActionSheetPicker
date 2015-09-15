@@ -108,6 +108,10 @@
             // Set to previously selected value
             [self.picker selectValue:self.twoRowsSelectedStrings[0] inComponent:0];
             [self.picker selectValue:self.twoRowsSelectedStrings[1] inComponent:1];
+            
+            // Usage of -selectIndex:inComponent:
+//            [self.picker selectIndex:2 inComponent:0];
+//            [self.picker selectIndex:1 inComponent:1];
         }
     } else if (indexPath.section == 1) {
         if (indexPath.row == 0) {

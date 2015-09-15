@@ -98,6 +98,11 @@ typedef NS_ENUM(NSUInteger, GKActionSheetPickerType) {
     return picker;
 }
 
++ (instancetype)stringPickerWithItems:(NSArray *)items
+{
+    return [GKActionSheetPicker stringPickerWithItems:items selectCallback:nil cancelCallback:nil];
+}
+
 + (instancetype)multiColumnStringPickerWithComponents:(NSArray *)components selectCallback:(GKActionSheetPickerSelectCallback)selectCallback cancelCallback:(GKActionSheetPickerCancelCallback)cancelCallback
 {
     GKActionSheetPicker *picker = [GKActionSheetPicker new];
@@ -134,6 +139,11 @@ typedef NS_ENUM(NSUInteger, GKActionSheetPickerType) {
     return picker;
 }
 
++ (instancetype)multiColumnStringPickerWithComponents:(NSArray *)components
+{
+    return [self multiColumnStringPickerWithComponents:components selectCallback:nil cancelCallback:nil];
+}
+
 + (instancetype)datePickerWithMode:(UIDatePickerMode)datePickerMode from:(NSDate *)minimumDate to:(NSDate *)maximumDate interval:(NSInteger)minuteInterval selectCallback:(GKActionSheetPickerSelectCallback)selectCallback cancelCallback:(GKActionSheetPickerCancelCallback)cancelCallback;
 {
     GKActionSheetPicker *picker = [GKActionSheetPicker new];
@@ -141,6 +151,11 @@ typedef NS_ENUM(NSUInteger, GKActionSheetPickerType) {
     NSAssert(YES, @"Not yet implemented");
     
     return picker;
+}
+
++ (instancetype)datePickerWithMode:(UIDatePickerMode)datePickerMode from:(NSDate *)minimumDate to:(NSDate *)maximumDate interval:(NSInteger)minuteInterval
+{
+    return [GKActionSheetPicker datePickerWithMode:datePickerMode from:minimumDate to:maximumDate interval:minuteInterval selectCallback:nil cancelCallback:nil];
 }
 
 #pragma mark - Accessors
@@ -391,6 +406,20 @@ typedef NS_ENUM(NSUInteger, GKActionSheetPickerType) {
         i += 1;
     }
     
+    [self.pickerView selectRow:index inComponent:component animated:NO];
+}
+
+- (void)selectIndex:(NSUInteger)index
+{
+    NSAssert(self.pickerType == GKActionSheetPickerTypeString, @"-selectValue: can be used only when picker is initialized with -stringPickerWithItems:selectCallback:cancelCallback:");
+    
+    [self.pickerView selectRow:index inComponent:0 animated:NO];
+}
+
+- (void)selectIndex:(NSUInteger)index inComponent:(NSUInteger)component
+{
+    NSAssert(self.pickerType == GKActionSheetPickerTypeMultiColumnString, @"-selectValue: can be used only when picker is initialized with -multiColumnStringPickerWithComponents:selectCallback:cancelCallback:");
+
     [self.pickerView selectRow:index inComponent:component animated:NO];
 }
 
