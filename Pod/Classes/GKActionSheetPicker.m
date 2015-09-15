@@ -357,7 +357,6 @@ typedef NS_ENUM(NSUInteger, GKActionSheetPickerType) {
     for (GKActionSheetPickerItem *item in self.items) {
         if ([item.value isEqual:value]) {
             index = i;
-            NSLog(@"We should select: %@", item);
         }
         
         i += 1;
@@ -372,7 +371,7 @@ typedef NS_ENUM(NSUInteger, GKActionSheetPickerType) {
     
     NSUInteger index = 0;
     NSUInteger i = 0;
-    for (GKActionSheetPickerItem *item in self.items) {
+    for (GKActionSheetPickerItem *item in [self.components objectAtIndex:component]) {
         if ([item.value isEqual:value]) {
             index = i;
         }

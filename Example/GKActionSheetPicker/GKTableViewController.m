@@ -15,8 +15,8 @@
 @property (nonatomic, strong) GKActionSheetPicker *picker;
 
 @property (nonatomic, strong) NSString *basicCellSelectedString;
-@property (nonatomic, strong) NSString *dateCellSelectedString;
-@property (nonatomic, strong) NSString *twoRowsSelectedString;
+@property (nonatomic, strong) NSDate *dateCellSelectedDate;
+@property (nonatomic, strong) NSArray *twoRowsSelectedStrings;
 
 @end
 
@@ -57,6 +57,7 @@
             self.picker = [GKActionSheetPicker stringPickerWithItems:items selectCallback:^(id selected) {
                 // This code will be called when the user taps the "OK" button
                 
+                self.basicCellSelectedString = (NSString *)selected;
                 self.basicCellDetailLabel.text = (NSString *)selected;
             
             } cancelCallback:^{
@@ -88,6 +89,7 @@
                 // This code will be called when the user taps the "OK" button
                 
                 NSArray *array = (NSArray *)selected;
+                self.twoRowsSelectedStrings = array;
                 self.twoRowsCellDetailLabel.text = [array componentsJoinedByString:@", "];
                 
             } cancelCallback:^{
@@ -99,6 +101,10 @@
             
             // Present it
             [self.picker presentPickerOnView:self.view];
+            
+            // Set to previously selected value
+            [self.picker selectValue:self.twoRowsSelectedStrings[0] inComponent:0];
+            [self.picker selectValue:self.twoRowsSelectedStrings[1] inComponent:1];
         }
     } else if (indexPath.section == 1) {
         if (indexPath.row == 0) {
