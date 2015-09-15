@@ -147,8 +147,14 @@ typedef NS_ENUM(NSUInteger, GKActionSheetPickerType) {
 + (instancetype)datePickerWithMode:(UIDatePickerMode)datePickerMode from:(NSDate *)minimumDate to:(NSDate *)maximumDate interval:(NSInteger)minuteInterval selectCallback:(GKActionSheetPickerSelectCallback)selectCallback cancelCallback:(GKActionSheetPickerCancelCallback)cancelCallback;
 {
     GKActionSheetPicker *picker = [GKActionSheetPicker new];
+
+    picker.pickerType = GKActionSheetPickerTypeDate;
     
-    NSAssert(YES, @"Not yet implemented");
+    picker.datePicker.minimumDate = minimumDate;
+    picker.datePicker.maximumDate = maximumDate;
+    picker.datePicker.minuteInterval = minuteInterval;
+    picker.selectCallback = selectCallback;
+    picker.cancelCallback = cancelCallback;
     
     return picker;
 }
@@ -199,6 +205,15 @@ typedef NS_ENUM(NSUInteger, GKActionSheetPickerType) {
     }
     
     return _pickerView;
+}
+
+- (UIDatePicker *)datePicker
+{
+    if (!_datePicker) {
+        _datePicker = [UIDatePicker new];
+    }
+    
+    return _datePicker;
 }
 
 - (UIToolbar *)toolBar
@@ -272,8 +287,6 @@ typedef NS_ENUM(NSUInteger, GKActionSheetPickerType) {
 {
     CGRect hostFrame = view.window.frame;
     
-    NSLog(@"Frame: %@", NSStringFromCGRect(hostFrame));
-    
     // Add overlay
     self.overlayLayerView.alpha = 0;
     self.overlayLayerView.frame = hostFrame;
@@ -327,9 +340,20 @@ typedef NS_ENUM(NSUInteger, GKActionSheetPickerType) {
     [self.toolBar setItems:toolBarItems animated:NO];
     
     // Add picker
-    self.pickerView.frame = CGRectMake(0, ToolbarHeight, hostFrame.size.width, PickerViewHeight);
-    self.pickerView.autoresizingMask = UIViewAutoresizingFlexibleWidth;
-    [self.pickerContainerView addSubview:self.pickerView];
+    if (self.pickerType == GKActionSheetPickerTypeString ||
+        self.pickerType == GKActionSheetPickerTypeMultiColumnString) {
+        
+        self.pickerView.frame = CGRectMake(0, ToolbarHeight, hostFrame.size.width, PickerViewHeight);
+        self.pickerView.autoresizingMask = UIViewAutoresizingFlexibleWidth;
+        [self.pickerContainerView addSubview:self.pickerView];
+        
+    } else if (self.pickerType == GKActionSheetPickerTypeDate) {
+        
+        self.datePicker.frame = CGRectMake(0, ToolbarHeight, hostFrame.size.width, PickerViewHeight);
+        self.datePicker.autoresizingMask = UIViewAutoresizingFlexibleWidth;
+        [self.pickerContainerView addSubview:self.datePicker];
+        [self.datePicker addTarget:self action:@selector(datePickerDidChangeValue:) forControlEvents:UIControlEventValueChanged];
+    }
     
     // Show overlay
     [UIView animateWithDuration:AnimationDuration animations:^{
@@ -368,7 +392,7 @@ typedef NS_ENUM(NSUInteger, GKActionSheetPickerType) {
 
 - (void)selectValue:(id)value
 {
-    NSAssert(self.pickerType == GKActionSheetPickerTypeString, @"-selectValue: can be used only when picker is initialized with -stringPickerWithItems:selectCallback:cancelCallback:");
+    NSAssert(self.pickerType == GKActionSheetPickerTypeString, @"-selectValue: can be used only when picker is initialized with +stringPickerWithItems:selectCallback:cancelCallback:");
 
     NSUInteger index = 0;
     NSUInteger i = 0;
@@ -394,7 +418,7 @@ typedef NS_ENUM(NSUInteger, GKActionSheetPickerType) {
 
 - (void)selectValue:(id)value inComponent:(NSUInteger)component
 {
-    NSAssert(self.pickerType == GKActionSheetPickerTypeMultiColumnString, @"-selectValue: can be used only when picker is initialized with -multiColumnStringPickerWithComponents:selectCallback:cancelCallback:");
+    NSAssert(self.pickerType == GKActionSheetPickerTypeMultiColumnString, @"-selectValue:inComponent: can be used only when picker is initialized with +multiColumnStringPickerWithComponents:selectCallback:cancelCallback:");
     
     NSUInteger index = 0;
     NSUInteger i = 0;
@@ -411,16 +435,25 @@ typedef NS_ENUM(NSUInteger, GKActionSheetPickerType) {
 
 - (void)selectIndex:(NSUInteger)index
 {
-    NSAssert(self.pickerType == GKActionSheetPickerTypeString, @"-selectValue: can be used only when picker is initialized with -stringPickerWithItems:selectCallback:cancelCallback:");
+    NSAssert(self.pickerType == GKActionSheetPickerTypeString, @"-selectIndex: can be used only when picker is initialized with +stringPickerWithItems:selectCallback:cancelCallback:");
     
     [self.pickerView selectRow:index inComponent:0 animated:NO];
 }
 
 - (void)selectIndex:(NSUInteger)index inComponent:(NSUInteger)component
 {
-    NSAssert(self.pickerType == GKActionSheetPickerTypeMultiColumnString, @"-selectValue: can be used only when picker is initialized with -multiColumnStringPickerWithComponents:selectCallback:cancelCallback:");
+    NSAssert(self.pickerType == GKActionSheetPickerTypeMultiColumnString, @"-selectIndex:inComponent: can be used only when picker is initialized with +multiColumnStringPickerWithComponents:selectCallback:cancelCallback:");
 
     [self.pickerView selectRow:index inComponent:component animated:NO];
+}
+
+- (void)selectDate:(NSDate *)date
+{
+    NSAssert(self.pickerType == GKActionSheetPickerTypeDate, @"-selectDate: can be used only when picker is initialized with + datePickerWithMode:from:to:interval:selectCallback:cancelCallback:");
+
+    if (date) {
+        [self.datePicker setDate:date];
+    }
 }
 
 #pragma mark - <UIPickerViewDataSource>
@@ -523,6 +556,14 @@ typedef NS_ENUM(NSUInteger, GKActionSheetPickerType) {
         }
         
         self.selectCallback(self.selections);
+        
+    } else if (self.pickerType == GKActionSheetPickerTypeDate) {
+        
+        if ([self.delegate respondsToSelector:@selector(actionSheetPicker:didSelectValue:)]) {
+            [self.delegate actionSheetPicker:self didSelectValue:self.selectedDate];
+        }
+        
+        self.selectCallback(self.selectedDate);
     }
 
     [self dismissPickerView];
@@ -537,6 +578,15 @@ typedef NS_ENUM(NSUInteger, GKActionSheetPickerType) {
     self.cancelCallback();
     
     [self dismissPickerView];
+}
+
+- (void)datePickerDidChangeValue:(UIDatePicker *)datePicker
+{
+    self.selectedDate = datePicker.date;
+
+    if ([self.delegate respondsToSelector:@selector(actionSheetPicker:didChangeValue:)]) {
+        [self.delegate actionSheetPicker:self didChangeValue:datePicker.date];
+    }
 }
 
 #pragma mark - Helper
@@ -563,7 +613,9 @@ typedef NS_ENUM(NSUInteger, GKActionSheetPickerType) {
         self.selections = selections;
 
     } else if (self.pickerType == GKActionSheetPickerTypeDate) {
-        // TODO
+    
+        self.selectedDate = self.datePicker.date;
+        
     }
 }
 

@@ -73,16 +73,16 @@ typedef NS_ENUM(NSUInteger, GKActionSheetPickerDismissType) {
 @property (nonatomic, strong) UIColor *overlayLayerColor;
 
 //! Array of selected values for each row respectively. Values are either `value` properties of `GKActionSheetPickerItem` objects or strings.
-@property (readonly) NSArray *selections;
+@property (nonatomic, readonly) NSArray *selections;
 
 //! The value of the selected item. If `GKActionSheetPickerItem` were given, it returns it's `value`, otherwise the string itself.
-@property (readonly) id selection;
+@property (nonatomic, readonly) id selection;
 
 //! Returns `YES`, if the picker is currently presented.
-@property (readonly) BOOL isOpen;
+@property (nonatomic, readonly) BOOL isOpen;
 
 //! Inner date picker object, which you can access to set it's locale, timeZone, and other properties
-@property (readonly) UIDatePicker *datePicker;
+@property (nonatomic, readonly) UIDatePicker *datePicker;
 
 //! Picker's delegate object
 @property (nonatomic, strong) id<GKActionSheetPickerDelegate> delegate;
@@ -199,6 +199,15 @@ typedef NS_ENUM(NSUInteger, GKActionSheetPickerDismissType) {
  @note Call this after -presentPickerOnView:
  */
 - (void)selectIndex:(NSUInteger)index;
+
+/**
+ Select a date on the date picker.
+ 
+ @param date A valid date which can be set on the picker
+
+ @note Call this after -presentPickerOnView:
+ */
+- (void)selectDate:(NSDate *)date;
 
 /**
  Open the picker.
