@@ -22,6 +22,7 @@ typedef NS_ENUM(NSUInteger, GKActionSheetPickerDismissType) {
 
 @protocol GKActionSheetPickerDelegate <NSObject>
 
+@optional
 /**
  Called when the user either clicks the positive button or `dismissType` is `GKActionSheetPickerDismissTypeSelect` and taps outside the picker.
  
@@ -127,13 +128,26 @@ typedef NS_ENUM(NSUInteger, GKActionSheetPickerDismissType) {
  
  @param value The `value` or the string to be selected
  @param component The number of the component
+
+ r@note Call this after -presentPickerOnView:
  */
 - (void)selectValue:(id)value inComponent:(NSUInteger)component;
+
+/**
+ Select multiple values at once in a multi column string picker
+ 
+ @param values Array of values, where values must be `value` or string
+
+ @note Call this after -presentPickerOnView:
+ */
+- (void)selectValues:(NSArray *)values;
 
 /**
  Select a valu in a string picker.
  
  @param value The `value` or the string to be selected
+ 
+ @note Call this after -presentPickerOnView:
  */
 - (void)selectValue:(id)value;
 
@@ -142,6 +156,8 @@ typedef NS_ENUM(NSUInteger, GKActionSheetPickerDismissType) {
  
  @param index The row to be selected in the given component
  @param component The number of the component
+
+ @note Call this after -presentPickerOnView:
  */
 - (void)selectIndex:(NSUInteger)index inComponent:(NSUInteger)component;
 
@@ -149,6 +165,8 @@ typedef NS_ENUM(NSUInteger, GKActionSheetPickerDismissType) {
  Select an item by its position in a string picker.
  
  @param index The row to be selected
+
+ @note Call this after -presentPickerOnView:
  */
 - (void)selectIndex:(NSUInteger)index;
 
@@ -156,6 +174,8 @@ typedef NS_ENUM(NSUInteger, GKActionSheetPickerDismissType) {
  Open the picker.
  
  @param view The view to add the picker as a subview to.
+
+ @note Call this after -presentPickerOnView:
  */
 - (void)presentPickerOnView:(UIView *)view;
 

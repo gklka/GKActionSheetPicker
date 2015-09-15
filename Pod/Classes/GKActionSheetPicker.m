@@ -257,10 +257,12 @@ typedef NS_ENUM(NSUInteger, GKActionSheetPickerType) {
 {
     CGRect hostFrame = view.window.frame;
     
+    NSLog(@"Frame: %@", NSStringFromCGRect(hostFrame));
+    
     // Add overlay
     self.overlayLayerView.alpha = 0;
     self.overlayLayerView.frame = hostFrame;
-    self.overlayLayerView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleWidth;
+    self.overlayLayerView.autoresizingMask = UIViewAutoresizingFlexibleWidth;
     [view.window addSubview:self.overlayLayerView];
     
     // Add click handler to overlay
@@ -311,6 +313,7 @@ typedef NS_ENUM(NSUInteger, GKActionSheetPickerType) {
     
     // Add picker
     self.pickerView.frame = CGRectMake(0, ToolbarHeight, hostFrame.size.width, PickerViewHeight);
+    self.pickerView.autoresizingMask = UIViewAutoresizingFlexibleWidth;
     [self.pickerContainerView addSubview:self.pickerView];
     
     // Show overlay
@@ -363,6 +366,15 @@ typedef NS_ENUM(NSUInteger, GKActionSheetPickerType) {
     }
     
     [self.pickerView selectRow:index inComponent:0 animated:NO];
+}
+
+- (void)selectValues:(NSArray *)values
+{
+    NSUInteger i=0;
+    for (id value in values) {
+        [self selectValue:value inComponent:i];
+        i += 1;
+    }
 }
 
 - (void)selectValue:(id)value inComponent:(NSUInteger)component

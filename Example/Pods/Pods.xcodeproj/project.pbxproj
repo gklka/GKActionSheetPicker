@@ -10,6 +10,7 @@
 		409EF65213E61579A34594C3BF5418AB /* Pods-GKActionSheetPicker_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AF47A31EE810CA210FD514811E76B2F4 /* Pods-GKActionSheetPicker_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		41A087D5955FA5272F90D2069C1B19C3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7189F7B263DA18CCD5A35C5787A75D5 /* Foundation.framework */; };
 		44FBF8FE0E71E0A5CF58DC3CB9D4DA35 /* Pods-GKActionSheetPicker_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 537AB097C099A54F2A8C29B78D1C2AB0 /* Pods-GKActionSheetPicker_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		470BD4971BA80FC400ED2661 /* GKActionSheetPickerItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 478005231BA194FC0059B241 /* GKActionSheetPickerItem.h */; settings = {ASSET_TAGS = (); }; };
 		4780051F1BA177290059B241 /* GKActionSheetPicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 4780051D1BA177290059B241 /* GKActionSheetPicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		478005201BA177290059B241 /* GKActionSheetPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 4780051E1BA177290059B241 /* GKActionSheetPicker.m */; };
 		478005251BA194FC0059B241 /* GKActionSheetPickerItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 478005231BA194FC0059B241 /* GKActionSheetPickerItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -283,6 +284,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				409EF65213E61579A34594C3BF5418AB /* Pods-GKActionSheetPicker_Example-umbrella.h in Headers */,
+				470BD4971BA80FC400ED2661 /* GKActionSheetPickerItem.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,6 +8,7 @@
 
 #import "GKTableViewController.h"
 #import "GKActionSheetPicker.h"
+#import "GKActionSheetPickerItem.h"
 
 @interface GKTableViewController () <GKActionSheetPickerDelegate>
 
@@ -17,6 +18,8 @@
 @property (nonatomic, strong) NSString *basicCellSelectedString;
 @property (nonatomic, strong) NSDate *dateCellSelectedDate;
 @property (nonatomic, strong) NSArray *twoRowsSelectedStrings;
+
+@property (nonatomic, strong) NSNumber *customValuesSelectedNumber;
 
 @end
 
@@ -66,10 +69,10 @@
             
             // Dismiss on tapping the dark overlay layer
             self.picker.dismissType = GKActionSheetPickerDismissTypeCancel;
-            
+
             // Present it
             [self.picker presentPickerOnView:self.view];
-
+            
             // Set to the previously selected value
             [self.picker selectValue:self.basicCellSelectedString];
 
@@ -98,7 +101,7 @@
             
             // Dismiss on tapping the dark overlay layer
             self.picker.dismissType = GKActionSheetPickerDismissTypeCancel;
-            
+
             // Present it
             [self.picker presentPickerOnView:self.view];
             
@@ -121,6 +124,37 @@
             [self.picker presentPickerOnView:self.view];
 
             
+        } else if (indexPath.row == 1) {
+            // Custom Values
+            
+            // Set the selectable items
+            NSArray *items = @[
+                               [GKActionSheetPickerItem pickerItemWithTitle:@"Apple" value:@0],
+                               [GKActionSheetPickerItem pickerItemWithTitle:@"Orange" value:@1],
+                               [GKActionSheetPickerItem pickerItemWithTitle:@"Peach" value:@2],
+                               [GKActionSheetPickerItem pickerItemWithTitle:@"Pearl" value:@3],
+                               [GKActionSheetPickerItem pickerItemWithTitle:@"Tomato" value:@4]
+                               ];
+            
+            // Create the picker
+            self.picker = [GKActionSheetPicker stringPickerWithItems:items selectCallback:^(id selected) {
+                // This code will be called when the user taps the "OK" button
+                
+                self.customValuesSelectedNumber = (NSNumber *)selected;
+                self.customValuesDetailLabel.text = [NSString stringWithFormat:@"%@", selected];
+                
+            } cancelCallback:^{
+                // This code will be called when the user taps cancel
+            }];
+            
+            // Dismiss on tapping the dark overlay layer
+            self.picker.dismissType = GKActionSheetPickerDismissTypeCancel;
+            
+            // Present it
+            [self.picker presentPickerOnView:self.view];
+            
+            // Set to previously selected value
+            [self.picker selectValue:self.customValuesSelectedNumber];
         }
     }
 }
