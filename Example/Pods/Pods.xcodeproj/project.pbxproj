@@ -11,6 +11,8 @@
 		41A087D5955FA5272F90D2069C1B19C3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7189F7B263DA18CCD5A35C5787A75D5 /* Foundation.framework */; };
 		44FBF8FE0E71E0A5CF58DC3CB9D4DA35 /* Pods-GKActionSheetPicker_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 537AB097C099A54F2A8C29B78D1C2AB0 /* Pods-GKActionSheetPicker_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		470BD4971BA80FC400ED2661 /* GKActionSheetPickerItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 478005231BA194FC0059B241 /* GKActionSheetPickerItem.h */; settings = {ASSET_TAGS = (); }; };
+		4736DA341BB56F7F001DFA8D /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 4736DA321BB56F7F001DFA8D /* .gitkeep */; settings = {ASSET_TAGS = (); }; };
+		4736DA351BB56F7F001DFA8D /* countries.json in Resources */ = {isa = PBXBuildFile; fileRef = 4736DA331BB56F7F001DFA8D /* countries.json */; settings = {ASSET_TAGS = (); }; };
 		4780051F1BA177290059B241 /* GKActionSheetPicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 4780051D1BA177290059B241 /* GKActionSheetPicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		478005201BA177290059B241 /* GKActionSheetPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 4780051E1BA177290059B241 /* GKActionSheetPicker.m */; };
 		478005251BA194FC0059B241 /* GKActionSheetPickerItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 478005231BA194FC0059B241 /* GKActionSheetPickerItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -58,6 +60,8 @@
 		37274B38B8AEA49A4084977FC616F7B9 /* Pods-GKActionSheetPicker_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GKActionSheetPicker_Example-dummy.m"; sourceTree = "<group>"; };
 		3D4C2C7F69FE12F602B5D88013DF9E7A /* Pods-GKActionSheetPicker_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GKActionSheetPicker_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		40F7DDECA972B5E14DF5D70F2FCB81E2 /* GKActionSheetPicker.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GKActionSheetPicker.xcconfig; sourceTree = "<group>"; };
+		4736DA321BB56F7F001DFA8D /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		4736DA331BB56F7F001DFA8D /* countries.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = countries.json; sourceTree = "<group>"; };
 		4780051D1BA177290059B241 /* GKActionSheetPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKActionSheetPicker.h; sourceTree = "<group>"; };
 		4780051E1BA177290059B241 /* GKActionSheetPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKActionSheetPicker.m; sourceTree = "<group>"; };
 		478005231BA194FC0059B241 /* GKActionSheetPickerItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKActionSheetPickerItem.h; sourceTree = "<group>"; };
@@ -123,6 +127,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4736DA311BB56F7F001DFA8D /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				4736DA321BB56F7F001DFA8D /* .gitkeep */,
+				4736DA331BB56F7F001DFA8D /* countries.json */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
 		53F661C0CA7190D2CF05023FB33D61E4 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -253,6 +266,7 @@
 		F87DE8FF69732E59F47A88A737BC68C7 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
+				4736DA311BB56F7F001DFA8D /* Assets */,
 				84B2705740FD0C8F4B4F7135481031AC /* Classes */,
 			);
 			path = Pod;
@@ -397,7 +411,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4736DA351BB56F7F001DFA8D /* countries.json in Resources */,
 				6056CABEDB2D9736C96234881E9A05C8 /* GKActionSheetPicker.bundle in Resources */,
+				4736DA341BB56F7F001DFA8D /* .gitkeep in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

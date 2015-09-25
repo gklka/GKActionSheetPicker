@@ -165,6 +165,46 @@ typedef NS_ENUM(NSUInteger, GKActionSheetPickerType) {
     return [GKActionSheetPicker datePickerWithMode:datePickerMode from:minimumDate to:maximumDate interval:minuteInterval selectCallback:nil cancelCallback:nil];
 }
 
++ (instancetype)countryPickerWithCallback:(GKActionSheetPickerSelectCallback)selectCallback cancelCallback:(GKActionSheetPickerCancelCallback)cancelCallback
+{
+    NSError *error;
+    NSBundle *bundle = [NSBundle bundleForClass:[self class]];
+    NSString *path = [bundle pathForResource:@"countries" ofType:@"json"];
+    NSData *data = [NSData dataWithContentsOfFile:path options:0 error:&error];
+    
+    NSAssert(!error, @"Cannot load countries list from the attached bundle");
+    error = nil;
+    
+    NSArray *countries = [NSJSONSerialization JSONObjectWithData:data options:0 error:&error];
+    
+    NSAssert(!error, @"Cannot parse countries JSON. Was the countries.json file modified?");
+    
+    GKActionSheetPicker *picker = [GKActionSheetPicker new];
+    
+    picker.pickerType = GKActionSheetPickerTypeString;
+
+    NSMutableArray *items = [NSMutableArray new];
+    
+    for (NSDictionary *countryDict in countries) {
+        NSString *name = [countryDict objectForKey:@"name"];
+        if (name) {
+            GKActionSheetPickerItem *item = [GKActionSheetPickerItem pickerItemWithTitle:name value:countryDict];
+            [items addObject:item];
+        }
+    }
+    
+    picker.items = items;
+    
+    picker.selectCallback = selectCallback;
+    picker.cancelCallback = cancelCallback;
+    
+    return picker;
+}
+
++ (instancetype)countryPicker {
+    return [GKActionSheetPicker countryPickerWithCallback:nil cancelCallback:nil];
+}
+
 #pragma mark - Accessors
 
 - (UIColor *)overlayLayerColor
@@ -454,6 +494,48 @@ typedef NS_ENUM(NSUInteger, GKActionSheetPickerType) {
 
     if (date) {
         [self.datePicker setDate:date];
+    }
+}
+
+- (void)selectCountryByName:(NSString *)countryName
+{
+    NSAssert(self.pickerType == GKActionSheetPickerTypeString, @"-selectIndex: can be used only when picker is initialized with +countryPickerWithCallback:cancelCallback:");
+    
+    if (countryName) {
+        NSUInteger index = 0;
+        NSUInteger i = 0;
+        for (GKActionSheetPickerItem *item in self.items) {
+            NSDictionary *countryDict = (NSDictionary *)item.value;
+            NSString *name = [countryDict objectForKey:@"name"];
+            if (name && [name isEqualToString:countryName]) {
+                index = i;
+            }
+            
+            i += 1;
+        }
+        
+        [self.pickerView selectRow:index inComponent:0 animated:NO];
+    }
+}
+
+- (void)selectCountryByCountryCode:(NSString *)countryCode
+{
+    NSAssert(self.pickerType == GKActionSheetPickerTypeString, @"-selectIndex: can be used only when picker is initialized with +countryPickerWithCallback:cancelCallback:");
+
+    if (countryCode) {
+        NSUInteger index = 0;
+        NSUInteger i = 0;
+        for (GKActionSheetPickerItem *item in self.items) {
+            NSDictionary *countryDict = (NSDictionary *)item.value;
+            NSString *code = [countryDict objectForKey:@"ISO3166-1-Alpha-2"];
+            if (code && [code isEqualToString:countryCode]) {
+                index = i;
+            }
+            
+            i += 1;
+        }
+        
+        [self.pickerView selectRow:index inComponent:0 animated:NO];
     }
 }
 

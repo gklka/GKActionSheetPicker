@@ -107,6 +107,9 @@ Pod::Spec.new do |s|
 
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
+  s.resource = "Resources/GKActionSheetPicker.bundle"
+  s.resources = ["Pod/Assets/*"]
+
 
   # ――― Project Linking ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #

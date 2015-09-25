@@ -15,5 +15,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *twoRowsCellDetailLabel;
 @property (weak, nonatomic) IBOutlet UILabel *delegateCellDetailLabel;
 @property (weak, nonatomic) IBOutlet UILabel *customValuesDetailLabel;
+@property (weak, nonatomic) IBOutlet UILabel *countryDetailLabel;
 
 @end

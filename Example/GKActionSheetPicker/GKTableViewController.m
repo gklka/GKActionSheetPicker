@@ -18,6 +18,7 @@
 @property (nonatomic, strong) NSString *basicCellSelectedString;
 @property (nonatomic, strong) NSDate *dateCellSelectedDate;
 @property (nonatomic, strong) NSArray *twoRowsSelectedStrings;
+@property (nonatomic, strong) NSDictionary *countryRowSelectedCountryDictionary;
 
 @property (nonatomic, strong) NSNumber *customValuesSelectedNumber;
 
@@ -128,8 +129,39 @@
             // Usage of -selectIndex:inComponent:
 //            [self.picker selectIndex:2 inComponent:0];
 //            [self.picker selectIndex:1 inComponent:1];
+        } else if (indexPath.row == 3) {
+            // Shorter Syntax
+            
+            // Set the selectable items
+            NSArray *items = @[@"Apple", @"Orange", @"Peach", @"Pearl", @"Tomato"];
+            
+            // Create the picker
+            self.picker = [GKActionSheetPicker stringPickerWithItems:items];
+            
+            // Present it
+            [self.picker presentPickerOnView:self.view];
+            
+            // Set to the previously selected value
+            [self.picker selectValue:self.basicCellSelectedString];
+            
+        } else if (indexPath.row == 4) {
+            // Country picker
+            
+            // Create the picker
+            self.picker = [GKActionSheetPicker countryPickerWithCallback:^(id selected) {
+                self.countryRowSelectedCountryDictionary = (NSDictionary *)selected;
+                self.countryDetailLabel.text = [self.countryRowSelectedCountryDictionary objectForKey:@"name"];
+            } cancelCallback:nil];
+        
+            // Present it
+            [self.picker presentPickerOnView:self.view];
+            
+            // Set to the previously selected value
+            [self.picker selectCountryByCountryCode:[self.countryRowSelectedCountryDictionary objectForKey:@"ISO3166-1-Alpha-2"]];
         }
+        
     } else if (indexPath.section == 1) {
+        
         if (indexPath.row == 0) {
             // Delegate
             

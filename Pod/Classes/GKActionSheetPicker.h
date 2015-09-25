@@ -154,6 +154,23 @@ typedef NS_ENUM(NSUInteger, GKActionSheetPickerDismissType) {
 + (instancetype)datePickerWithMode:(UIDatePickerMode)datePickerMode from:(NSDate *)minimumDate to:(NSDate *)maximumDate interval:(NSInteger)minuteInterval;
 
 /**
+ Creates a new `GKActionSheetPicker` instance in country mode. Please note, that many of the parameters are not included in this initializer function, you have to set them on the created object manually.
+ 
+ @param selectCallback The block to be called when user presses the positive button or taps outside the picker and `dismissType` is `GKActionSheetPickerDismissTypeSelect`.
+ @param cancelCallback The block to be called when user presses the negative button or taps outside the picker and `dismissType` is `GKActionSheetPickerDismissTypeCancel`.
+ 
+ @return A new `GKActionSheetPicker` object
+ */
++ (instancetype)countryPickerWithCallback:(GKActionSheetPickerSelectCallback)selectCallback cancelCallback:(GKActionSheetPickerCancelCallback)cancelCallback;
+
+/**
+ Creates a new `GKActionSheetPicker` instance in country mode. Please note, that many of the parameters are not included in this initializer function, you have to set them on the created object manually.
+  
+ @return A new `GKActionSheetPicker` object
+ */
++ (instancetype)countryPicker;
+
+/**
  Select a value in a multi column string picker.
  
  @param value The `value` or the string to be selected
@@ -208,6 +225,24 @@ typedef NS_ENUM(NSUInteger, GKActionSheetPickerDismissType) {
  @note Call this after -presentPickerOnView:
  */
 - (void)selectDate:(NSDate *)date;
+
+/**
+ Select a country on the country picker by giving it's ISO3166-1-Alpha-2 2-letter country code
+ 
+ @param countryCode ISO3166-1-Alpha-2 2-letter country code
+ 
+ @note Call this after -presentPickerOnView:
+ */
+- (void)selectCountryByName:(NSString *)countryName;
+
+/**
+ Select a country on the country picker by giving it's english name
+ 
+ @param countryName English name of the country
+ 
+ @note Call this after -presentPickerOnView:
+ */
+- (void)selectCountryByCountryCode:(NSString *)countryCode;
 
 /**
  Open the picker.
