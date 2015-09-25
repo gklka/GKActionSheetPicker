@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "GKActionSheetPicker"
-  s.version      = "0.1"
+  s.version      = "0.1.1"
   s.summary      = "An easy-to-use controller for presenting UIPickerView in overlay view"
 
   s.description  = <<-DESC
@@ -88,8 +88,8 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "Classes", "Classes/**/*.{h,m}"
-  s.exclude_files = "Classes/Exclude"
+  s.source_files  = "Pod/Classes", "Pod/Classes/**/*.{h,m}"
+#  s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
 

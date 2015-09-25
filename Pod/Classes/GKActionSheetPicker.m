@@ -153,6 +153,7 @@ typedef NS_ENUM(NSUInteger, GKActionSheetPickerType) {
     picker.datePicker.minimumDate = minimumDate;
     picker.datePicker.maximumDate = maximumDate;
     picker.datePicker.minuteInterval = minuteInterval;
+    picker.datePicker.datePickerMode = datePickerMode;
     picker.selectCallback = selectCallback;
     picker.cancelCallback = cancelCallback;
     

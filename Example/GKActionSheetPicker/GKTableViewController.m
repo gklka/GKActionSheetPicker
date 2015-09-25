@@ -79,7 +79,7 @@
         } else if (indexPath.row == 1) {
             // Date
             
-            self.picker = [GKActionSheetPicker datePickerWithMode:UIDatePickerModeDate from:[NSDate dateWithTimeIntervalSinceNow:-60*60*24*365] to:[NSDate new] interval:60*60*24 selectCallback:^(id selected) {
+            self.picker = [GKActionSheetPicker datePickerWithMode:UIDatePickerModeDateAndTime from:[NSDate dateWithTimeIntervalSinceNow:-60*60*24*365] to:[NSDate new] interval:60*60*24 selectCallback:^(id selected) {
                 
                 self.dateCellSelectedDate = (NSDate *)selected;
                 self.dateCellDetailLabel.text = [NSString stringWithFormat:@"%@", selected];
