@@ -7,7 +7,6 @@
 //
 
 #import "GKActionSheetPicker.h"
-#import "GKActionSheetPickerItem.h"
 
 #define AnimationDuration 0.3f
 #define PickerHeight 260.f

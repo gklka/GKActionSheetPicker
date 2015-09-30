@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GKActionSheetPickerItem.h"
 
 typedef void(^GKActionSheetPickerSelectCallback)(id selected);
 typedef void(^GKActionSheetPickerCancelCallback)();
