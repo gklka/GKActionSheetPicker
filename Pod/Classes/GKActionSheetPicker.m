@@ -328,6 +328,9 @@ typedef NS_ENUM(NSUInteger, GKActionSheetPickerType) {
 {
     CGRect hostFrame = view.window.frame;
     
+    // Hide keyboard
+    [view endEditing:YES];
+    
     // Add overlay
     self.overlayLayerView.alpha = 0;
     self.overlayLayerView.frame = hostFrame;
