@@ -321,6 +321,30 @@ typedef NS_ENUM(NSUInteger, GKActionSheetPickerType) {
     return _selectButton;
 }
 
+- (NSArray *)items {
+    if (!_items) {
+        _items = @[];
+    }
+    
+    return _items;
+}
+
+- (NSArray *)components {
+    if (!_components) {
+        _components = @[];
+    }
+    
+    return _components;
+}
+
+- (NSArray *)selections {
+    if (!_selections) {
+        _selections = @[];
+    }
+    
+    return _selections;
+}
+
 #pragma mark - Functions
 
 - (void)presentPickerOnView:(UIView *)view
