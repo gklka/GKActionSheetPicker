@@ -52,11 +52,15 @@ typedef NS_ENUM(NSUInteger, GKActionSheetPickerDismissType) {
 
 @interface GKActionSheetPicker : NSObject
 
+#pragma mark - Callbacks
+
 //! The block to be called when user presses the positive button or taps outside the picker and `dismissType` is `GKActionSheetPickerDismissTypeSelect`.
 @property (nonatomic, strong) GKActionSheetPickerSelectCallback selectCallback;
 
 //! The block to be called when user presses the negative button or taps outside the picker and `dismissType` is `GKActionSheetPickerDismissTypeCancel`.
 @property (nonatomic, strong) GKActionSheetPickerCancelCallback cancelCallback;
+
+#pragma mark - Action sheet picker buttons
 
 //! Label on the positive button. Default: OK
 @property (nonatomic, strong) NSString *selectButtonTitle;
@@ -67,11 +71,15 @@ typedef NS_ENUM(NSUInteger, GKActionSheetPickerDismissType) {
 //! Display the negative button on the left or not. Default is `YES`
 @property (nonatomic) BOOL cancelButtonEnabled;
 
+#pragma mark - Settings
+
 //! Control what happens when the user taps outside the picker. Default: `GKActionSheetPickerDismissTypeNone`
 @property (nonatomic) GKActionSheetPickerDismissType dismissType;
 
 //! Color of the overlay layer above the picker. Default: transparent black.
 @property (nonatomic, strong) UIColor *overlayLayerColor;
+
+#pragma mark - Control
 
 //! Array of selected values for each row respectively. Values are either `value` properties of `GKActionSheetPickerItem` objects or strings.
 @property (nonatomic, readonly) NSArray *selections;
@@ -87,6 +95,8 @@ typedef NS_ENUM(NSUInteger, GKActionSheetPickerDismissType) {
 
 //! Picker's delegate object
 @property (nonatomic, strong) id<GKActionSheetPickerDelegate> delegate;
+
+#pragma mark - String Picker
 
 /**
  Create a new `GKActionSheetPicker` instance with string mode. Please note, that many of the parameters are not included in this initializer function, you have to set them on the created object manually.
@@ -108,6 +118,8 @@ typedef NS_ENUM(NSUInteger, GKActionSheetPickerDismissType) {
  */
 + (instancetype)stringPickerWithItems:(NSArray *)items;
 
+#pragma mark - Multi-column String Picker
+
 /**
  Create a new `GKActionSheetPicker` instance with string mode. Please note, that many of the parameters are not included in this initializer function, you have to set them on the created object manually.
  
@@ -127,6 +139,8 @@ typedef NS_ENUM(NSUInteger, GKActionSheetPickerDismissType) {
  @return A new `GKActionSheetPicker` object
  */
 + (instancetype)multiColumnStringPickerWithComponents:(NSArray *)components;
+
+#pragma mark - Date Picker
 
 /**
  Creates a new `GKActionSheetPicker` instance with date mode. Please note, that many of the parameters are not included in this initializer function, you have to set them on the created object manually.
@@ -154,6 +168,8 @@ typedef NS_ENUM(NSUInteger, GKActionSheetPickerDismissType) {
  */
 + (instancetype)datePickerWithMode:(UIDatePickerMode)datePickerMode from:(NSDate *)minimumDate to:(NSDate *)maximumDate interval:(NSInteger)minuteInterval;
 
+#pragma mark - Country Picker
+
 /**
  Creates a new `GKActionSheetPicker` instance in country mode. Please note, that many of the parameters are not included in this initializer function, you have to set them on the created object manually.
  
@@ -170,6 +186,8 @@ typedef NS_ENUM(NSUInteger, GKActionSheetPickerDismissType) {
  @return A new `GKActionSheetPicker` object
  */
 + (instancetype)countryPicker;
+
+#pragma mark - Selecting values
 
 /**
  Select a value in a multi column string picker.
@@ -244,6 +262,8 @@ typedef NS_ENUM(NSUInteger, GKActionSheetPickerDismissType) {
  @note Call this after -presentPickerOnView:
  */
 - (void)selectCountryByCountryCode:(NSString *)countryCode;
+
+#pragma mark - Control functions
 
 /**
  Open the picker.

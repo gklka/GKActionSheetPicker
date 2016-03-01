@@ -207,6 +207,25 @@
             
             // Set to previously selected value
             [self.picker selectValue:self.customValuesSelectedNumber];
+        } else if (indexPath.row == 2) {
+            // Custom Left Button
+            
+            // Set the selectable items
+            NSArray *items = @[@"Apple", @"Orange", @"Peach", @"Pearl", @"Tomato"];
+            
+            // Create the picker
+            self.picker = [GKActionSheetPicker stringPickerWithItems:items selectCallback:^(id selected) {
+            } cancelCallback:^{
+                NSLog(@"Something nice. Do you like it?");
+            }];
+            
+            // Do not dismiss on tapping the gray overlay layer
+            self.picker.dismissType = GKActionSheetPickerDismissTypeNone;
+            
+            self.picker.cancelButtonTitle = @"Log me something nice!";
+            
+            // Present it
+            [self.picker presentPickerOnView:self.view];
         }
     }
 }
