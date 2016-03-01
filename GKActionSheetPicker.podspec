@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "GKActionSheetPicker"
-  s.version      = "0.2.2"
+  s.version      = "0.2.3"
   s.summary      = "An easy-to-use controller for presenting UIPickerView in overlay view"
 
   s.description  = <<-DESC
