@@ -1,6 +1,6 @@
 # GKActionSheetPicker
 
-[![CI Status](http://img.shields.io/travis/Gruber Kristóf/GKActionSheetPicker.svg?style=flat)](https://travis-ci.org/Gruber Kristóf/GKActionSheetPicker)
+[![CI Status](http://img.shields.io/travis/Gruber Kristóf/GKActionSheetPicker.svg?style=flat)](https://travis-ci.org/Gruber Kristóf/GKActionSheetPicker)
 [![Version](https://img.shields.io/cocoapods/v/GKActionSheetPicker.svg?style=flat)](http://cocoapods.org/pods/GKActionSheetPicker)
 [![License](https://img.shields.io/cocoapods/l/GKActionSheetPicker.svg?style=flat)](http://cocoapods.org/pods/GKActionSheetPicker)
 [![Platform](https://img.shields.io/cocoapods/p/GKActionSheetPicker.svg?style=flat)](http://cocoapods.org/pods/GKActionSheetPicker)
@@ -46,23 +46,23 @@ pod "GKActionSheetPicker"
 
 First of all, import it:
 
-```
-#import<GKActionSheetPicker/GKActionSheetPicker.h>
+```objectivec
+#import <GKActionSheetPicker/GKActionSheetPicker.h>
 ```
 
 Then you shoul have a strong reference, for example you can have a property:
 
-```
+```objectivec
 @property (nonatomic, strong) GKActionSheetPicker *actionSheetPicker;
 ```
 
 You can open it like this:
 
-```
+```objectivec
 NSArray *items = @[@"Apple", @"Orange", @"Peach", @"Pearl", @"Tomato"];
 
 self.actionSheetPicker = [GKActionSheetPicker stringPickerWithItems:items selectCallback:^(id selected) {
-    NSLog("Hello! The value is: %@", selected);
+    NSLog(@"Hello! The value is: %@", selected);
 } cancelCallback:nil];
             
 [self.actionSheetPicker presentPickerOnView:self.view];
@@ -76,7 +76,7 @@ You have different class methods for creating multi column, date, and country pi
 
 Items can be either strings or instances of `GKActionSheetPickerItem`. If you want to get a different thing when the user selects the value than the string which is displayed, you should use this object:
 
-```
+```objectivec
 NSArray *items = @[
                    [GKActionSheetPickerItem pickerItemWithTitle:@"Apple" value:@0],
                    [GKActionSheetPickerItem pickerItemWithTitle:@"Orange" value:@1],
@@ -92,7 +92,7 @@ If you are using strings, the a `GKActionSheetPickerItem` will be created with t
 
 You are responsible for setting the current value of the picker. You can do it after the picker has been presented:
 
-```
+```objectivec
 // Present it
 [self.actionSheetPicker presentPickerOnView:self.view];
             
@@ -103,15 +103,17 @@ You are responsible for setting the current value of the picker. You can do it a
 
 Note: There's different select function for each type of the picker, for example the single column picker uses the `-selectValue:` message.
 
-See [the example](https://github.com/gklka/GKActionSheetPicker/blob/master/Example/GKActionSheetPicker/GKTableViewController.m) or the [header file](https://github.com/gklka/GKActionSheetPicker/blob/master/Pod/Classes/GKActionSheetPicker.h) for more options.
-
 ### Delegate method
 
 If you don't like the callbacks, you can use the short version of the class methods and implement `GKActionSheetPickerDelegate` on your class. The delegate will be notified about positive button taps (`-actionSheetPicker:didSelectValue:`), value changes without closing (`-actionSheetPicker:didChangeValue:`), and cancels (`-actionSheetPickerDidCancel:`). Set the `delegate` property to your class and implement any of these.
 
+### More examples
+
+See [the example](https://github.com/gklka/GKActionSheetPicker/blob/master/Example/GKActionSheetPicker/GKTableViewController.m) or the [header file](https://github.com/gklka/GKActionSheetPicker/blob/master/Pod/Classes/GKActionSheetPicker.h) for more options.
+
 ## Author
 
-Gruber Kristóf, gk@lka.hu, [@gklka](http://twitter.com/gklka) on Twitter
+Gruber Kristóf, gk@lka.hu, [@gklka](http://twitter.com/gklka) on Twitter
 
 ## License
 
