@@ -5,11 +5,33 @@
 [![License](https://img.shields.io/cocoapods/l/GKActionSheetPicker.svg?style=flat)](http://cocoapods.org/pods/GKActionSheetPicker)
 [![Platform](https://img.shields.io/cocoapods/p/GKActionSheetPicker.svg?style=flat)](http://cocoapods.org/pods/GKActionSheetPicker)
 
-## Usage
+GKActionSheetPicker is an easy-to-use drop-in solution for selecting values from many choices. It presents an overlay sheet animating from bottom and lets the user select the desired value from a `UIPickerView` then either confirm it by selecting the positive button or dismiss it.
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+## Functions
+
+- Easy-to-use
+- Fits into iOS design
+- Supports strings, dates
+- Extendible (a country picker example boundled)
+- Supports multi column
+- Supports model-display pairs (for example it displays a string and returns the corresponding ID when selected)
+- Black overlay above other elements
+- Dismiss on tapping the overlay
+- Highly customizable
+- Supports all resolutions (including iPad and landscape)
+
+Here's how it looks like:
+
+![image](https://raw.githubusercontent.com/gklka/GKActionSheetPicker/master/doc/screenshot_sm.png)
+
+## Try it yourself
+
+[Try on Appetize.io](https://appetize.io/app/q8zp7y8jzq1jv1335eat8xd8fr)
 
 ## Requirements
+
+- iOS 7
+- ARC, obviously
 
 ## Installation
 
@@ -20,9 +42,76 @@ it, simply add the following line to your Podfile:
 pod "GKActionSheetPicker"
 ```
 
+## Usage
+
+First of all, import it:
+
+```
+#import<GKActionSheetPicker/GKActionSheetPicker.h>
+```
+
+Then you shoul have a strong reference, for example you can have a property:
+
+```
+@property (nonatomic, strong) GKActionSheetPicker *actionSheetPicker;
+```
+
+You can open it like this:
+
+```
+NSArray *items = @[@"Apple", @"Orange", @"Peach", @"Pearl", @"Tomato"];
+
+self.actionSheetPicker = [GKActionSheetPicker stringPickerWithItems:items selectCallback:^(id selected) {
+    NSLog("Hello! The value is: %@", selected);
+} cancelCallback:nil];
+            
+[self.actionSheetPicker presentPickerOnView:self.view];
+```
+
+That's all.
+
+You have different class methods for creating multi column, date, and country pickers. See the `.h` file.
+
+### Custom values
+
+Items can be either strings or instances of `GKActionSheetPickerItem`. If you want to get a different thing when the user selects the value than the string which is displayed, you should use this object:
+
+```
+NSArray *items = @[
+                   [GKActionSheetPickerItem pickerItemWithTitle:@"Apple" value:@0],
+                   [GKActionSheetPickerItem pickerItemWithTitle:@"Orange" value:@1],
+                   [GKActionSheetPickerItem pickerItemWithTitle:@"Peach" value:@2],
+                   [GKActionSheetPickerItem pickerItemWithTitle:@"Pearl" value:@3],
+                   [GKActionSheetPickerItem pickerItemWithTitle:@"Tomato" value:@4]
+                   ];
+```
+
+If you are using strings, the a `GKActionSheetPickerItem` will be created with the same value as the title.
+
+### Setting the current value
+
+You are responsible for setting the current value of the picker. You can do it after the picker has been presented:
+
+```
+// Present it
+[self.actionSheetPicker presentPickerOnView:self.view];
+            
+// Set to previously selected value
+[self.actionSheetPicker selectValue:self.twoRowsSelectedStrings[0] inComponent:0];
+[self.actionSheetPicker selectValue:self.twoRowsSelectedStrings[1] inComponent:1];
+```
+
+Note: There's different select function for each type of the picker, for example the single column picker uses the `-selectValue:` message.
+
+See [the example](https://github.com/gklka/GKActionSheetPicker/blob/master/Example/GKActionSheetPicker/GKTableViewController.m) or the [header file](https://github.com/gklka/GKActionSheetPicker/blob/master/Pod/Classes/GKActionSheetPicker.h) for more options.
+
+### Delegate method
+
+If you don't like the callbacks, you can use the short version of the class methods and implement `GKActionSheetPickerDelegate` on your class. The delegate will be notified about positive button taps (`-actionSheetPicker:didSelectValue:`), value changes without closing (`-actionSheetPicker:didChangeValue:`), and cancels (`-actionSheetPickerDidCancel:`). Set the `delegate` property to your class and implement any of these.
+
 ## Author
 
-Gruber Kristóf, gk@lka.hu
+Gruber Kristóf, gk@lka.hu, [@gklka](http://twitter.com/gklka) on Twitter
 
 ## License
 
