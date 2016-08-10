@@ -262,6 +262,7 @@ typedef NS_ENUM(NSUInteger, GKActionSheetPickerType) {
     if (!_toolBar) {
         _toolBar = [UIToolbar new];
         _toolBar.delegate = self;
+        _toolBar.autoresizingMask = UIViewAutoresizingFlexibleWidth;
     }
     
     return _toolBar;
@@ -370,7 +371,7 @@ typedef NS_ENUM(NSUInteger, GKActionSheetPickerType) {
     // Add overlay
     self.overlayLayerView.alpha = 0;
     self.overlayLayerView.frame = hostFrame;
-    self.overlayLayerView.autoresizingMask = UIViewAutoresizingFlexibleWidth;
+    self.overlayLayerView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     [view.window addSubview:self.overlayLayerView];
     
     // Add click handler to overlay
@@ -458,12 +459,15 @@ typedef NS_ENUM(NSUInteger, GKActionSheetPickerType) {
     [UIView animateWithDuration:AnimationDuration delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
         self.pickerContainerView.frame = pickerContainerDestinationFrame;
     } completion:^(BOOL finished) {
-        //
+        self.isOpen = YES;
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateOrientation:) name:UIDeviceOrientationDidChangeNotification object:nil];
     }];
 }
 
 - (void)dismissPickerView
 {
+    if (!self.isOpen) return;
+    
     CGRect pickerContainerDestinationFrame = CGRectMake(0,
                                                         self.pickerContainerView.frame.origin.y + PickerHeight,
                                                         self.pickerContainerView.frame.size.width,
@@ -479,7 +483,9 @@ typedef NS_ENUM(NSUInteger, GKActionSheetPickerType) {
     [UIView animateWithDuration:AnimationDuration delay:0 options:UIViewAnimationOptionCurveEaseIn animations:^{
         self.pickerContainerView.frame = pickerContainerDestinationFrame;
     } completion:^(BOOL finished) {
+        [[NSNotificationCenter defaultCenter] removeObserver:self];
         [self.pickerContainerView removeFromSuperview];
+        self.isOpen = NO;
     }];
 }
 
@@ -752,6 +758,16 @@ typedef NS_ENUM(NSUInteger, GKActionSheetPickerType) {
         self.selectedDate = self.datePicker.date;
         
     }
+}
+
+- (void)updateOrientation:(id)orientation {
+    CGRect hostFrame = self.pickerContainerView.window.frame;
+    CGRect pickerContainerDestinationFrame = CGRectMake(0,
+                                                        hostFrame.size.height - PickerHeight,
+                                                        hostFrame.size.width,
+                                                        PickerHeight);
+    
+    self.pickerContainerView.frame = pickerContainerDestinationFrame;
 }
 
 @end
