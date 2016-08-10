@@ -107,6 +107,19 @@ Note: There's different select function for each type of the picker, for example
 
 If you don't like the callbacks, you can use the short version of the class methods and implement `GKActionSheetPickerDelegate` on your class. The delegate will be notified about positive button taps (`-actionSheetPicker:didSelectValue:`), value changes without closing (`-actionSheetPicker:didChangeValue:`), and cancels (`-actionSheetPickerDidCancel:`). Set the `delegate` property to your class and implement any of these.
 
+### Customization
+
+| Property | Description |
+| -------- | ----------- |
+| `selectCallback` | The block to be called when user presses the positive button or taps outside the picker and `dismissType` is `GKActionSheetPickerDismissTypeSelect`. |
+| `cancelCallback` | The block to be called when user presses the negative button or taps outside the picker and `dismissType` is `GKActionSheetPickerDismissTypeCancel`. |
+| `selectButtonTitle` | Label on the positive button. Default: OK |
+| `cancelButtonTitle` | Label on the negative button. Default: Cancel |
+| `cancelButtonEnabled` | Display the negative button on the left or not. Default is `YES` |
+| `dismissType` | Control what happens when the user taps outside the picker. Default: `GKActionSheetPickerDismissTypeNone` |
+| `overlayLayerColor` | Color of the overlay layer above the picker. Default: transparent black. |
+| `title` | The title of the picker which will be displayed in the center, between the buttons |
+
 ### More examples
 
 See [the example](https://github.com/gklka/GKActionSheetPicker/blob/master/Example/GKActionSheetPicker/GKTableViewController.m) or the [header file](https://github.com/gklka/GKActionSheetPicker/blob/master/Pod/Classes/GKActionSheetPicker.h) for more options.
