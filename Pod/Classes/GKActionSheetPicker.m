@@ -327,11 +327,7 @@ typedef NS_ENUM(NSUInteger, GKActionSheetPickerType) {
         _titleLabel = [[UILabel alloc] initWithFrame:CGRectZero];
         _titleLabel.text = self.title;
         _titleLabel.textColor = [UIColor darkTextColor];
-        _titleLabel.textAlignment = NSTextAlignmentCenter;
         _titleLabel.font = [UIFont boldSystemFontOfSize:17.f];
-        _titleLabel.allowsDefaultTighteningForTruncation = YES;
-        _titleLabel.adjustsFontSizeToFitWidth = NO;
-        _titleLabel.lineBreakMode = NSLineBreakByTruncatingTail;
         [_titleLabel sizeToFit];
     }
     
@@ -412,6 +408,7 @@ typedef NS_ENUM(NSUInteger, GKActionSheetPickerType) {
     
     if (self.cancelButtonEnabled) {
         [self.cancelButton setTitle:self.cancelButtonTitle];
+        [self.cancelButton setPossibleTitles:[NSSet setWithObject:self.selectButtonTitle]];
         [toolBarItems addObject:spacer];
         [toolBarItems addObject:self.cancelButton];
     }
@@ -421,17 +418,15 @@ typedef NS_ENUM(NSUInteger, GKActionSheetPickerType) {
         [toolBarItems addObject:flexibleSpacer];
 
         self.titleLabel = nil; // Reset
-        CGRect frame = self.titleLabel.frame;
-        frame.size.width = hostFrame.size.width * 0.6f;
-        self.titleLabel.frame = frame;
-
         UIBarButtonItem *titleContainer = [[UIBarButtonItem alloc] initWithCustomView:self.titleLabel];
         [toolBarItems addObject:titleContainer];
     }
     
     [toolBarItems addObject:flexibleSpacer];
 
+    // Select button
     [self.selectButton setTitle:self.selectButtonTitle];
+    [self.cancelButton setPossibleTitles:[NSSet setWithObject:self.cancelButtonTitle]];
     [toolBarItems addObject:self.selectButton];
     [toolBarItems addObject:spacer];
     
