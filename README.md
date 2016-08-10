@@ -26,7 +26,7 @@ Here's how it looks like:
 
 ## Try it yourself
 
-[Try on Appetize.io](https://appetize.io/app/q8zp7y8jzq1jv1335eat8xd8fr)
+[Try on Appetize.io](https://appetize.io/app/v50wvvd3bx2mt104dexq35zhhm?device=iphone6&scale=100&orientation=portrait&osVersion=9.3)
 
 ## Requirements
 
