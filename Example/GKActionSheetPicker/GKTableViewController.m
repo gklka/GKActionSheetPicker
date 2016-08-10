@@ -52,7 +52,10 @@
 
     if (indexPath.section == 0) {
         if (indexPath.row == 0) {
-            // Basic
+            /**-----------------------------------------------------------------------------
+             * @name Basic
+             * ----------------------------------------------------------------------------- */
+
             
             // Set the selectable items
             NSArray *items = @[@"Apple", @"Orange", @"Peach", @"Pearl", @"Tomato"];
@@ -64,13 +67,8 @@
                 self.basicCellSelectedString = (NSString *)selected;
                 self.basicCellDetailLabel.text = (NSString *)selected;
             
-            } cancelCallback:^{
-                // This code will be called when the user taps cancel
-            }];
+            } cancelCallback:nil];
             
-            // Dismiss on tapping the dark overlay layer
-            self.picker.dismissType = GKActionSheetPickerDismissTypeCancel;
-
             // Present it
             [self.picker presentPickerOnView:self.view];
             
@@ -78,7 +76,42 @@
             [self.picker selectValue:self.basicCellSelectedString];
 
         } else if (indexPath.row == 1) {
-            // Date
+            /**-----------------------------------------------------------------------------
+             * @name Title
+             * ----------------------------------------------------------------------------- */
+
+                
+            // Set the selectable items
+            NSArray *items = @[@"Apple", @"Orange", @"Peach", @"Pearl", @"Tomato"];
+            
+            // Create the picker
+            self.picker = [GKActionSheetPicker stringPickerWithItems:items selectCallback:^(id selected) {
+                // This code will be called when the user taps the "OK" button
+                
+                self.basicCellSelectedString = (NSString *)selected;
+                self.basicCellDetailLabel.text = (NSString *)selected;
+                
+            } cancelCallback:^{
+                // This code will be called when the user taps cancel
+            }];
+            
+            // Dismiss on tapping the dark overlay layer
+            self.picker.dismissType = GKActionSheetPickerDismissTypeCancel;
+        
+            // Set the title
+            self.picker.title = @"GKActionSheetPicker GKActionSheetPicker";
+            
+            // Present it
+            [self.picker presentPickerOnView:self.view];
+            
+            // Set to the previously selected value
+            [self.picker selectValue:self.basicCellSelectedString];
+                
+        } else if (indexPath.row == 2) {
+            /**-----------------------------------------------------------------------------
+             * @name Date
+             * ----------------------------------------------------------------------------- */
+
             
             self.picker = [GKActionSheetPicker datePickerWithMode:UIDatePickerModeDateAndTime from:[NSDate dateWithTimeIntervalSinceNow:-60*60*24*365] to:[NSDate new] interval:60*60*24 selectCallback:^(id selected) {
                 
@@ -95,8 +128,11 @@
             // Set to the previously selected value
             [self.picker selectDate:self.dateCellSelectedDate];
             
-        } else if (indexPath.row == 2) {
-            // Two rows
+        } else if (indexPath.row == 3) {
+            /**-----------------------------------------------------------------------------
+             * @name Two rows
+             * ----------------------------------------------------------------------------- */
+
 
             // Set the selectable items
             NSArray *components = @[
@@ -129,8 +165,11 @@
             // Usage of -selectIndex:inComponent:
 //            [self.picker selectIndex:2 inComponent:0];
 //            [self.picker selectIndex:1 inComponent:1];
-        } else if (indexPath.row == 3) {
-            // Shorter Syntax
+        } else if (indexPath.row == 4) {
+            /**-----------------------------------------------------------------------------
+             * @name Shorter Syntax
+             * ----------------------------------------------------------------------------- */
+
             
             // Set the selectable items
             NSArray *items = @[@"Apple", @"Orange", @"Peach", @"Pearl", @"Tomato"];
@@ -144,8 +183,11 @@
             // Set to the previously selected value
             [self.picker selectValue:self.basicCellSelectedString];
             
-        } else if (indexPath.row == 4) {
-            // Country picker
+        } else if (indexPath.row == 5) {
+            /**-----------------------------------------------------------------------------
+             * @name Country picker
+             * ----------------------------------------------------------------------------- */
+
             
             // Create the picker
             self.picker = [GKActionSheetPicker countryPickerWithCallback:^(id selected) {
@@ -163,7 +205,10 @@
     } else if (indexPath.section == 1) {
         
         if (indexPath.row == 0) {
-            // Delegate
+            /**-----------------------------------------------------------------------------
+             * @name Delegate
+             * ----------------------------------------------------------------------------- */
+
             
             // Set the selectable items
             NSArray *items = @[@"Apple", @"Orange", @"Peach", @"Pearl", @"Tomato"];
@@ -177,7 +222,10 @@
 
             
         } else if (indexPath.row == 1) {
-            // Custom Values
+            /**-----------------------------------------------------------------------------
+             * @name Custom Values
+             * ----------------------------------------------------------------------------- */
+
             
             // Set the selectable items
             NSArray *items = @[
@@ -208,7 +256,10 @@
             // Set to previously selected value
             [self.picker selectValue:self.customValuesSelectedNumber];
         } else if (indexPath.row == 2) {
-            // Custom Left Button
+            /**-----------------------------------------------------------------------------
+             * @name Custom Left Button
+             * ----------------------------------------------------------------------------- */
+
             
             // Set the selectable items
             NSArray *items = @[@"Apple", @"Orange", @"Peach", @"Pearl", @"Tomato"];

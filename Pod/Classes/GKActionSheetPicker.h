@@ -79,6 +79,9 @@ typedef NS_ENUM(NSUInteger, GKActionSheetPickerDismissType) {
 //! Color of the overlay layer above the picker. Default: transparent black.
 @property (nonatomic, strong) UIColor *overlayLayerColor;
 
+//! The title of the picker which will be displayed in the center, between the buttons
+@property (nonatomic, strong) NSString *title;
+
 #pragma mark - Control
 
 //! Array of selected values for each row respectively. Values are either `value` properties of `GKActionSheetPickerItem` objects or strings.

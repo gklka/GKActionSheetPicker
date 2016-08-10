@@ -43,6 +43,7 @@ typedef NS_ENUM(NSUInteger, GKActionSheetPickerType) {
 @property (nonatomic, strong) UIToolbar *toolBar;
 @property (nonatomic, strong) UIBarButtonItem *cancelButton;
 @property (nonatomic, strong) UIBarButtonItem *selectButton;
+@property (nonatomic, strong) UILabel *titleLabel;
 
 @property (nonatomic, strong) UITapGestureRecognizer *layerTapRecognizer;
 
@@ -321,6 +322,22 @@ typedef NS_ENUM(NSUInteger, GKActionSheetPickerType) {
     return _selectButton;
 }
 
+- (UILabel *)titleLabel {
+    if (!_titleLabel) {
+        _titleLabel = [[UILabel alloc] initWithFrame:CGRectZero];
+        _titleLabel.text = self.title;
+        _titleLabel.textColor = [UIColor darkTextColor];
+        _titleLabel.textAlignment = NSTextAlignmentCenter;
+        _titleLabel.font = [UIFont boldSystemFontOfSize:17.f];
+        _titleLabel.allowsDefaultTighteningForTruncation = YES;
+        _titleLabel.adjustsFontSizeToFitWidth = NO;
+        _titleLabel.lineBreakMode = NSLineBreakByTruncatingTail;
+        [_titleLabel sizeToFit];
+    }
+    
+    return _titleLabel;
+}
+
 - (NSArray *)items {
     if (!_items) {
         _items = @[];
@@ -387,6 +404,7 @@ typedef NS_ENUM(NSUInteger, GKActionSheetPickerType) {
 
     // Toolbar spacer
     UIBarButtonItem *spacer = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
+    UIBarButtonItem *flexibleSpacer = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
     spacer.width = 15.f;
 
     // Add buttons
@@ -398,8 +416,21 @@ typedef NS_ENUM(NSUInteger, GKActionSheetPickerType) {
         [toolBarItems addObject:self.cancelButton];
     }
     
-    [toolBarItems addObject:[[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil]];
+    // Title
+    if (self.titleLabel) {
+        [toolBarItems addObject:flexibleSpacer];
+
+        self.titleLabel = nil; // Reset
+        CGRect frame = self.titleLabel.frame;
+        frame.size.width = hostFrame.size.width * 0.6f;
+        self.titleLabel.frame = frame;
+
+        UIBarButtonItem *titleContainer = [[UIBarButtonItem alloc] initWithCustomView:self.titleLabel];
+        [toolBarItems addObject:titleContainer];
+    }
     
+    [toolBarItems addObject:flexibleSpacer];
+
     [self.selectButton setTitle:self.selectButtonTitle];
     [toolBarItems addObject:self.selectButton];
     [toolBarItems addObject:spacer];
