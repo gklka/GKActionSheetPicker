@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00899D1E29D2E7B44F299652 /* Pods_GKActionSheetPicker_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90050952C38E53CFA8DDCFD1 /* Pods_GKActionSheetPicker_Tests.framework */; };
+		1835ADD1633CC813A88A7B5A /* Pods_GKActionSheetPicker_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55963407D91815F9116AB1A2 /* Pods_GKActionSheetPicker_Example.framework */; };
 		4780051C1BA1766C0059B241 /* Launch Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4780051B1BA1766C0059B241 /* Launch Screen.xib */; };
 		4780052B1BA1B5570059B241 /* GKTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4780052A1BA1B5570059B241 /* GKTableViewController.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
@@ -22,8 +24,6 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
-		BBCD5A95EAD4AC9482FAEE09 /* Pods_GKActionSheetPicker_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76714E99E028FC1F76A58B98 /* Pods_GKActionSheetPicker_Example.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		E7FB320E3A38BB616F5D6AC6 /* Pods_GKActionSheetPicker_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 812B56E8046BAFCCEA228947 /* Pods_GKActionSheetPicker_Tests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,14 +37,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		07E03E1B2CD04A8CE33577A1 /* Pods-GKActionSheetPicker_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GKActionSheetPicker_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GKActionSheetPicker_Example/Pods-GKActionSheetPicker_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		0A66D6A8EDF7FF302AD598C9 /* GKActionSheetPicker.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = GKActionSheetPicker.podspec; path = ../GKActionSheetPicker.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		16700C494B7A43457E76CBF6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		3B9A948233C4E9AC0D0F508F /* Pods-GKActionSheetPicker_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GKActionSheetPicker_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-GKActionSheetPicker_Example/Pods-GKActionSheetPicker_Example.release.xcconfig"; sourceTree = "<group>"; };
 		3D969C76A7034E23EB3D77BD /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		4780051B1BA1766C0059B241 /* Launch Screen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Launch Screen.xib"; sourceTree = "<group>"; };
 		478005291BA1B5570059B241 /* GKTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKTableViewController.h; sourceTree = "<group>"; };
 		4780052A1BA1B5570059B241 /* GKTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKTableViewController.m; sourceTree = "<group>"; };
-		4B952137BA37268233DEA587 /* Pods-GKActionSheetPicker_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GKActionSheetPicker_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GKActionSheetPicker_Tests/Pods-GKActionSheetPicker_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		55963407D91815F9116AB1A2 /* Pods_GKActionSheetPicker_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GKActionSheetPicker_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* GKActionSheetPicker_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GKActionSheetPicker_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -62,11 +62,11 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		76714E99E028FC1F76A58B98 /* Pods_GKActionSheetPicker_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GKActionSheetPicker_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		812B56E8046BAFCCEA228947 /* Pods_GKActionSheetPicker_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GKActionSheetPicker_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		A8F4E1A92BB9E27613BB8554 /* Pods-GKActionSheetPicker_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GKActionSheetPicker_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-GKActionSheetPicker_Example/Pods-GKActionSheetPicker_Example.release.xcconfig"; sourceTree = "<group>"; };
-		CEC1A2D43065DED8D3D015BD /* Pods-GKActionSheetPicker_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GKActionSheetPicker_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GKActionSheetPicker_Tests/Pods-GKActionSheetPicker_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		87D7F1C22919456BE64AF66F /* Pods-GKActionSheetPicker_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GKActionSheetPicker_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GKActionSheetPicker_Tests/Pods-GKActionSheetPicker_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		90050952C38E53CFA8DDCFD1 /* Pods_GKActionSheetPicker_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GKActionSheetPicker_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BDED040DC742678566FA19F /* Pods-GKActionSheetPicker_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GKActionSheetPicker_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GKActionSheetPicker_Tests/Pods-GKActionSheetPicker_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		F1BC688CF649D7273AE0DFA3 /* Pods-GKActionSheetPicker_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GKActionSheetPicker_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GKActionSheetPicker_Example/Pods-GKActionSheetPicker_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +77,7 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				BBCD5A95EAD4AC9482FAEE09 /* Pods_GKActionSheetPicker_Example.framework in Frameworks */,
+				1835ADD1633CC813A88A7B5A /* Pods_GKActionSheetPicker_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,13 +88,24 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				E7FB320E3A38BB616F5D6AC6 /* Pods_GKActionSheetPicker_Tests.framework in Frameworks */,
+				00899D1E29D2E7B44F299652 /* Pods_GKActionSheetPicker_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		035C05BE91E438F91FFE39DF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F1BC688CF649D7273AE0DFA3 /* Pods-GKActionSheetPicker_Example.debug.xcconfig */,
+				3B9A948233C4E9AC0D0F508F /* Pods-GKActionSheetPicker_Example.release.xcconfig */,
+				9BDED040DC742678566FA19F /* Pods-GKActionSheetPicker_Tests.debug.xcconfig */,
+				87D7F1C22919456BE64AF66F /* Pods-GKActionSheetPicker_Tests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
@@ -103,7 +114,7 @@
 				6003F5B5195388D20070C39A /* Tests */,
 				6003F58C195388D20070C39A /* Frameworks */,
 				6003F58B195388D20070C39A /* Products */,
-				FB6CC5ECDA5D08256666FABF /* Pods */,
+				035C05BE91E438F91FFE39DF /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -123,8 +134,8 @@
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
-				76714E99E028FC1F76A58B98 /* Pods_GKActionSheetPicker_Example.framework */,
-				812B56E8046BAFCCEA228947 /* Pods_GKActionSheetPicker_Tests.framework */,
+				55963407D91815F9116AB1A2 /* Pods_GKActionSheetPicker_Example.framework */,
+				90050952C38E53CFA8DDCFD1 /* Pods_GKActionSheetPicker_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -185,17 +196,6 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
-		FB6CC5ECDA5D08256666FABF /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				07E03E1B2CD04A8CE33577A1 /* Pods-GKActionSheetPicker_Example.debug.xcconfig */,
-				A8F4E1A92BB9E27613BB8554 /* Pods-GKActionSheetPicker_Example.release.xcconfig */,
-				4B952137BA37268233DEA587 /* Pods-GKActionSheetPicker_Tests.debug.xcconfig */,
-				CEC1A2D43065DED8D3D015BD /* Pods-GKActionSheetPicker_Tests.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -203,12 +203,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "GKActionSheetPicker_Example" */;
 			buildPhases = (
-				8B61B7C6FEA6C074D1CCA942 /* Check Pods Manifest.lock */,
+				0940F86F7382E9EAFA58FFC9 /* [CP] Check Pods Manifest.lock */,
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				497559605BCF50505125FB1D /* Embed Pods Frameworks */,
-				519530C23F69EF447452E555 /* Copy Pods Resources */,
+				A721538B08643BFB431A97D6 /* [CP] Embed Pods Frameworks */,
+				7F04ED542310AD78E39D0BD5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -223,12 +223,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "GKActionSheetPicker_Tests" */;
 			buildPhases = (
-				94BAF74D094AB81E1D0176A4 /* Check Pods Manifest.lock */,
+				2607C17BB8B60CDE5F5B6138 /* [CP] Check Pods Manifest.lock */,
 				6003F5AA195388D20070C39A /* Sources */,
 				6003F5AB195388D20070C39A /* Frameworks */,
 				6003F5AC195388D20070C39A /* Resources */,
-				77CD44BFC7FEB88149A6E69D /* Embed Pods Frameworks */,
-				DD18E4A712EC387B53A4CDB4 /* Copy Pods Resources */,
+				726DFDD375C17FD5B44BE5C7 /* [CP] Embed Pods Frameworks */,
+				997D7473EDB55A70BE3A06C1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -297,44 +297,44 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		497559605BCF50505125FB1D /* Embed Pods Frameworks */ = {
+		0940F86F7382E9EAFA58FFC9 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GKActionSheetPicker_Example/Pods-GKActionSheetPicker_Example-frameworks.sh\"\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		519530C23F69EF447452E555 /* Copy Pods Resources */ = {
+		2607C17BB8B60CDE5F5B6138 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GKActionSheetPicker_Example/Pods-GKActionSheetPicker_Example-resources.sh\"\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		77CD44BFC7FEB88149A6E69D /* Embed Pods Frameworks */ = {
+		726DFDD375C17FD5B44BE5C7 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -342,49 +342,49 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GKActionSheetPicker_Tests/Pods-GKActionSheetPicker_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		8B61B7C6FEA6C074D1CCA942 /* Check Pods Manifest.lock */ = {
+		7F04ED542310AD78E39D0BD5 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GKActionSheetPicker_Example/Pods-GKActionSheetPicker_Example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		94BAF74D094AB81E1D0176A4 /* Check Pods Manifest.lock */ = {
+		997D7473EDB55A70BE3A06C1 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		DD18E4A712EC387B53A4CDB4 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GKActionSheetPicker_Tests/Pods-GKActionSheetPicker_Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A721538B08643BFB431A97D6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GKActionSheetPicker_Example/Pods-GKActionSheetPicker_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -512,7 +512,7 @@
 		};
 		6003F5C0195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 07E03E1B2CD04A8CE33577A1 /* Pods-GKActionSheetPicker_Example.debug.xcconfig */;
+			baseConfigurationReference = F1BC688CF649D7273AE0DFA3 /* Pods-GKActionSheetPicker_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -529,7 +529,7 @@
 		};
 		6003F5C1195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A8F4E1A92BB9E27613BB8554 /* Pods-GKActionSheetPicker_Example.release.xcconfig */;
+			baseConfigurationReference = 3B9A948233C4E9AC0D0F508F /* Pods-GKActionSheetPicker_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -546,7 +546,7 @@
 		};
 		6003F5C3195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4B952137BA37268233DEA587 /* Pods-GKActionSheetPicker_Tests.debug.xcconfig */;
+			baseConfigurationReference = 9BDED040DC742678566FA19F /* Pods-GKActionSheetPicker_Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -569,7 +569,7 @@
 		};
 		6003F5C4195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CEC1A2D43065DED8D3D015BD /* Pods-GKActionSheetPicker_Tests.release.xcconfig */;
+			baseConfigurationReference = 87D7F1C22919456BE64AF66F /* Pods-GKActionSheetPicker_Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (

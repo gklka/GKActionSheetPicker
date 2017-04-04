@@ -71,6 +71,9 @@ typedef NS_ENUM(NSUInteger, GKActionSheetPickerDismissType) {
 //! Display the negative button on the left or not. Default is `YES`
 @property (nonatomic) BOOL cancelButtonEnabled;
 
+//! Color of the buttons
+@property (nonatomic, strong) UIColor *tintColor;
+
 #pragma mark - Settings
 
 //! Control what happens when the user taps outside the picker. Default: `GKActionSheetPickerDismissTypeNone`

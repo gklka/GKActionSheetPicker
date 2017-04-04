@@ -16,6 +16,7 @@
 @property (nonatomic, strong) GKActionSheetPicker *picker;
 
 @property (nonatomic, strong) NSString *basicCellSelectedString;
+@property (nonatomic, strong) NSString *tintColorCellSelectedString;
 @property (nonatomic, strong) NSDate *dateCellSelectedDate;
 @property (nonatomic, strong) NSArray *twoRowsSelectedStrings;
 @property (nonatomic, strong) NSDictionary *countryRowSelectedCountryDictionary;
@@ -261,6 +262,32 @@
             
             // Present it
             [self.picker presentPickerOnView:self.view];
+            
+        } else if (indexPath.row == 3) {
+            
+            /**-----------------------------------------------------------------------------
+             * @name Tint Color
+             * ----------------------------------------------------------------------------- */
+            
+            // Set the selectable items
+            NSArray *items = @[@"Apple", @"Orange", @"Peach", @"Pearl", @"Tomato"];
+            
+            // Create the picker
+            self.picker = [GKActionSheetPicker stringPickerWithItems:items selectCallback:^(id selected) {
+                // This code will be called when the user taps the "OK" button
+                
+                self.tintColorCellSelectedString = (NSString *)selected;
+                self.tintColorDetailLabel.text = (NSString *)selected;
+                
+            } cancelCallback:nil];
+            
+            self.picker.tintColor = [UIColor redColor];
+            
+            // Present it
+            [self.picker presentPickerOnView:self.view];
+            
+            // Set to the previously selected value
+            [self.picker selectValue:self.tintColorCellSelectedString];
         }
     }
 }

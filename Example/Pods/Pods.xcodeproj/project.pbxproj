@@ -7,196 +7,148 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		409EF65213E61579A34594C3BF5418AB /* Pods-GKActionSheetPicker_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AF47A31EE810CA210FD514811E76B2F4 /* Pods-GKActionSheetPicker_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		41A087D5955FA5272F90D2069C1B19C3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7189F7B263DA18CCD5A35C5787A75D5 /* Foundation.framework */; };
-		44FBF8FE0E71E0A5CF58DC3CB9D4DA35 /* Pods-GKActionSheetPicker_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 537AB097C099A54F2A8C29B78D1C2AB0 /* Pods-GKActionSheetPicker_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		470BD4971BA80FC400ED2661 /* GKActionSheetPickerItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 478005231BA194FC0059B241 /* GKActionSheetPickerItem.h */; settings = {ASSET_TAGS = (); }; };
-		4736DA341BB56F7F001DFA8D /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 4736DA321BB56F7F001DFA8D /* .gitkeep */; settings = {ASSET_TAGS = (); }; };
-		4736DA351BB56F7F001DFA8D /* countries.json in Resources */ = {isa = PBXBuildFile; fileRef = 4736DA331BB56F7F001DFA8D /* countries.json */; settings = {ASSET_TAGS = (); }; };
-		4780051F1BA177290059B241 /* GKActionSheetPicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 4780051D1BA177290059B241 /* GKActionSheetPicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		478005201BA177290059B241 /* GKActionSheetPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 4780051E1BA177290059B241 /* GKActionSheetPicker.m */; };
-		478005251BA194FC0059B241 /* GKActionSheetPickerItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 478005231BA194FC0059B241 /* GKActionSheetPickerItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		478005271BA194FC0059B241 /* GKActionSheetPickerItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 478005241BA194FC0059B241 /* GKActionSheetPickerItem.m */; };
-		584D01A37B4EC74181A6C9A537153819 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7189F7B263DA18CCD5A35C5787A75D5 /* Foundation.framework */; };
-		595AB194D09F349F07C1E021553BE535 /* GKActionSheetPicker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C3D4EDC7C2AE3B5FB13B3897EDDF972 /* GKActionSheetPicker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6056CABEDB2D9736C96234881E9A05C8 /* GKActionSheetPicker.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FC9E991470DB3B42A5B81B33B9CD9EF2 /* GKActionSheetPicker.bundle */; };
-		71C37AD9AC6816C3CB5AEE5CC4464798 /* Pods-GKActionSheetPicker_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 37274B38B8AEA49A4084977FC616F7B9 /* Pods-GKActionSheetPicker_Example-dummy.m */; };
-		899F6156B486551FDC7B5DB149BFFB47 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7189F7B263DA18CCD5A35C5787A75D5 /* Foundation.framework */; };
-		91F52C038F7CD707826A08ABDE73B9E2 /* Pods-GKActionSheetPicker_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CF0FB3460B093985DD09969A72EC63C3 /* Pods-GKActionSheetPicker_Tests-dummy.m */; };
-		F15E48F80D64670903B68CBAE64ABD52 /* GKActionSheetPicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 95E695EA45816F60DF0DEAC2100238B6 /* GKActionSheetPicker-dummy.m */; };
+		0B36C0664FCC61AB556D92400292AF6A /* GKActionSheetPicker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2728D07BD5516D59267ADE29EE0F4A03 /* GKActionSheetPicker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		100C252ACCAD8A9ED7AA7F5FE9D6C569 /* Pods-GKActionSheetPicker_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 27C5CD86FEE06627E7AACEA1B6374314 /* Pods-GKActionSheetPicker_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		291B55D5A11E688DA7C46A2C23E7CC35 /* GKActionSheetPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A7D41E04FDA38F5E9FC5462EEA585EA /* GKActionSheetPicker.m */; };
+		2F84FD79929A82794A24EF9428D5BB65 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		4A99ED51CF7FDE9B7082C79C89DF6E7F /* GKActionSheetPicker.h in Headers */ = {isa = PBXBuildFile; fileRef = D64DC21BB5E1C2ED286DCA15615929E8 /* GKActionSheetPicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		517AB50C979C74213A8D16FD3F87F71C /* countries.json in Resources */ = {isa = PBXBuildFile; fileRef = CBEC6358A3FCA795D4AADC9E916F7988 /* countries.json */; };
+		58002546089D860E37E3F13864ACDC5B /* Pods-GKActionSheetPicker_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F67410063EF6AA907240D28C6262D2C /* Pods-GKActionSheetPicker_Example-dummy.m */; };
+		7BCAF4D2A1CE511110ED5EB3C1250F8E /* Pods-GKActionSheetPicker_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7923E1ABB218B3D0D17D253EE7E9A7EC /* Pods-GKActionSheetPicker_Tests-dummy.m */; };
+		7BE8324429C45FA900202B55E9957C29 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		89D7F73E2BD91EBB35D7786262934556 /* GKActionSheetPickerItem.m in Sources */ = {isa = PBXBuildFile; fileRef = E1C25A2F2720C754DD286B860B7384B2 /* GKActionSheetPickerItem.m */; };
+		A5EAC70646D815037C35347DB97A619E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		AC969680F2F6B865023D1A83A918C2B0 /* GKActionSheetPicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FC8AB6C7CBED4F3AD814AC4B3E5E185 /* GKActionSheetPicker-dummy.m */; };
+		B704E3AC340DFAD705F7BE3F78CED177 /* GKActionSheetPickerItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 986AA64A2B6F2F116DEA138E09AEEE9E /* GKActionSheetPickerItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F8B4099188743BC98F637AC388D9660E /* Pods-GKActionSheetPicker_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 69B0C484EE23007B5BA13E2194BEAE88 /* Pods-GKActionSheetPicker_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		4A4C1EBCD661FB41659CB76A0D201B31 /* PBXContainerItemProxy */ = {
+		9BD722E041C6D762E0FC11E1004A8542 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 739217D60065B3B0981505F1C62148C2;
+			remoteGlobalIDString = 9ECED5F96B4144BA1D74C50E06371449;
 			remoteInfo = GKActionSheetPicker;
 		};
-		8BE7F87050B888895A943235CB37E564 /* PBXContainerItemProxy */ = {
+		FCB80F6AC8B581A0B7D16AF1209B71D4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 739217D60065B3B0981505F1C62148C2;
+			remoteGlobalIDString = 9ECED5F96B4144BA1D74C50E06371449;
 			remoteInfo = GKActionSheetPicker;
-		};
-		F9B7AA2C82CF2EDB20116CC3243FCFBB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6482B647C700C065D7D086A068AE2EB6;
-			remoteInfo = "GKActionSheetPicker-GKActionSheetPicker";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0E3C414B9032CB0FBD2896C820E12F25 /* Pods-GKActionSheetPicker_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GKActionSheetPicker_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		095D9ADE6CEBF1D1F803C17481013665 /* GKActionSheetPicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GKActionSheetPicker.framework; path = GKActionSheetPicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D303D73ECB5056277FBB447114C91A4 /* GKActionSheetPicker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = GKActionSheetPicker.modulemap; sourceTree = "<group>"; };
+		0F67410063EF6AA907240D28C6262D2C /* Pods-GKActionSheetPicker_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GKActionSheetPicker_Example-dummy.m"; sourceTree = "<group>"; };
+		0FA3E3BE6A5ABFC89549B4D6755A2254 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		10FB135FCF2B36E89325B6C31507C194 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13EEA457639B45881E5B65F73EE5944B /* Pods-GKActionSheetPicker_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GKActionSheetPicker_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		14B88079B306299537C8B817105EE0EE /* Pods-GKActionSheetPicker_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-GKActionSheetPicker_Tests.modulemap"; sourceTree = "<group>"; };
+		14B88079B306299537C8B817105EE0EE /* Pods-GKActionSheetPicker_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-GKActionSheetPicker_Tests.modulemap"; sourceTree = "<group>"; };
+		1A7D41E04FDA38F5E9FC5462EEA585EA /* GKActionSheetPicker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = GKActionSheetPicker.m; sourceTree = "<group>"; };
+		1D9134652FF694D81385A54FD2C89A62 /* Pods_GKActionSheetPicker_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_GKActionSheetPicker_Tests.framework; path = "Pods-GKActionSheetPicker_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		23F0A8B5558B5FFCF066268E4116EC78 /* Pods-GKActionSheetPicker_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GKActionSheetPicker_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		2728D07BD5516D59267ADE29EE0F4A03 /* GKActionSheetPicker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GKActionSheetPicker-umbrella.h"; sourceTree = "<group>"; };
+		27C5CD86FEE06627E7AACEA1B6374314 /* Pods-GKActionSheetPicker_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GKActionSheetPicker_Tests-umbrella.h"; sourceTree = "<group>"; };
 		2BF7A45C8395BF9F13ECE1FF4A72B250 /* Pods-GKActionSheetPicker_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GKActionSheetPicker_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		37274B38B8AEA49A4084977FC616F7B9 /* Pods-GKActionSheetPicker_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GKActionSheetPicker_Example-dummy.m"; sourceTree = "<group>"; };
-		3D4C2C7F69FE12F602B5D88013DF9E7A /* Pods-GKActionSheetPicker_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GKActionSheetPicker_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		40F7DDECA972B5E14DF5D70F2FCB81E2 /* GKActionSheetPicker.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GKActionSheetPicker.xcconfig; sourceTree = "<group>"; };
-		4736DA321BB56F7F001DFA8D /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		4736DA331BB56F7F001DFA8D /* countries.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = countries.json; sourceTree = "<group>"; };
-		4780051D1BA177290059B241 /* GKActionSheetPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKActionSheetPicker.h; sourceTree = "<group>"; };
-		4780051E1BA177290059B241 /* GKActionSheetPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKActionSheetPicker.m; sourceTree = "<group>"; };
-		478005231BA194FC0059B241 /* GKActionSheetPickerItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKActionSheetPickerItem.h; sourceTree = "<group>"; };
-		478005241BA194FC0059B241 /* GKActionSheetPickerItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKActionSheetPickerItem.m; sourceTree = "<group>"; };
+		2FC8AB6C7CBED4F3AD814AC4B3E5E185 /* GKActionSheetPicker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GKActionSheetPicker-dummy.m"; sourceTree = "<group>"; };
+		34C6634D421CE741D00B1DAA487737C1 /* Pods-GKActionSheetPicker_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GKActionSheetPicker_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		443A5F65EFD4BB73519981FFDDABCEE5 /* Pods-GKActionSheetPicker_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GKActionSheetPicker_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		48F089B0BFC9C34A8372B6D5BA188C37 /* Pods-GKActionSheetPicker_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GKActionSheetPicker_Example-frameworks.sh"; sourceTree = "<group>"; };
-		49DDD28119FC97F5EC12AED6D583E645 /* GKActionSheetPicker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GKActionSheetPicker-prefix.pch"; sourceTree = "<group>"; };
-		4AED10E8758063973C876F82BE7BC8B3 /* Pods_GKActionSheetPicker_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GKActionSheetPicker_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4C3D4EDC7C2AE3B5FB13B3897EDDF972 /* GKActionSheetPicker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GKActionSheetPicker-umbrella.h"; sourceTree = "<group>"; };
 		4D01B9A3017983D8A8DF524B5F2B9678 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4E6DA60D77BD10449AB3DF7C6ED5EA2C /* Pods_GKActionSheetPicker_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GKActionSheetPicker_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		537AB097C099A54F2A8C29B78D1C2AB0 /* Pods-GKActionSheetPicker_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GKActionSheetPicker_Tests-umbrella.h"; sourceTree = "<group>"; };
-		63BB83B6BB87655C5535BA3422286EE4 /* GKActionSheetPicker-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "GKActionSheetPicker-Private.xcconfig"; sourceTree = "<group>"; };
-		8CF28147C44C0C8EF285CD9A8A494D64 /* Pods-GKActionSheetPicker_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-GKActionSheetPicker_Example.modulemap"; sourceTree = "<group>"; };
-		8F03D07AC1AFAE74ACB1BAE28D99798B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		95E695EA45816F60DF0DEAC2100238B6 /* GKActionSheetPicker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GKActionSheetPicker-dummy.m"; sourceTree = "<group>"; };
+		64DB65ECD39CC78BDD5773586D38518F /* Pods_GKActionSheetPicker_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_GKActionSheetPicker_Example.framework; path = "Pods-GKActionSheetPicker_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		69B0C484EE23007B5BA13E2194BEAE88 /* Pods-GKActionSheetPicker_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GKActionSheetPicker_Example-umbrella.h"; sourceTree = "<group>"; };
+		7923E1ABB218B3D0D17D253EE7E9A7EC /* Pods-GKActionSheetPicker_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GKActionSheetPicker_Tests-dummy.m"; sourceTree = "<group>"; };
+		7D815AF85A209C30CE40878A9495E6CB /* GKActionSheetPicker.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GKActionSheetPicker.xcconfig; sourceTree = "<group>"; };
+		8CF28147C44C0C8EF285CD9A8A494D64 /* Pods-GKActionSheetPicker_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-GKActionSheetPicker_Example.modulemap"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		978EB4D1D78A5695C20D66D5D1873F5E /* Pods-GKActionSheetPicker_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GKActionSheetPicker_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		979DCDBC2EBE7F3160E1E9E7CBA50F96 /* Pods-GKActionSheetPicker_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GKActionSheetPicker_Example.release.xcconfig"; sourceTree = "<group>"; };
+		986AA64A2B6F2F116DEA138E09AEEE9E /* GKActionSheetPickerItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GKActionSheetPickerItem.h; sourceTree = "<group>"; };
 		A3247817A036539C4DF1C6091E33B319 /* Pods-GKActionSheetPicker_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GKActionSheetPicker_Example-resources.sh"; sourceTree = "<group>"; };
-		AF47A31EE810CA210FD514811E76B2F4 /* Pods-GKActionSheetPicker_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GKActionSheetPicker_Example-umbrella.h"; sourceTree = "<group>"; };
-		B1331A2B93B4B0058AEB1AC1980232D7 /* GKActionSheetPicker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = GKActionSheetPicker.modulemap; sourceTree = "<group>"; };
-		B7189F7B263DA18CCD5A35C5787A75D5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		C4095B90A7E5FDE1008D4FC2CD884E4D /* Pods-GKActionSheetPicker_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GKActionSheetPicker_Tests-resources.sh"; sourceTree = "<group>"; };
-		CF0FB3460B093985DD09969A72EC63C3 /* Pods-GKActionSheetPicker_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GKActionSheetPicker_Tests-dummy.m"; sourceTree = "<group>"; };
+		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		CBEC6358A3FCA795D4AADC9E916F7988 /* countries.json */ = {isa = PBXFileReference; includeInIndex = 1; path = countries.json; sourceTree = "<group>"; };
+		D64DC21BB5E1C2ED286DCA15615929E8 /* GKActionSheetPicker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GKActionSheetPicker.h; sourceTree = "<group>"; };
+		DA0C48EC8488DFF6A44ECF5B94D2DE7E /* GKActionSheetPicker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GKActionSheetPicker-prefix.pch"; sourceTree = "<group>"; };
 		DDB0B1AB92B9ED7F5CA2F03CEA01DDAC /* Pods-GKActionSheetPicker_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GKActionSheetPicker_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		E2EEDABBCAC943F30F80271D64276DB2 /* GKActionSheetPicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GKActionSheetPicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F2F4F9C94AF602637A457D47243AED9E /* Pods-GKActionSheetPicker_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GKActionSheetPicker_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		FC9E991470DB3B42A5B81B33B9CD9EF2 /* GKActionSheetPicker.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GKActionSheetPicker.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1C25A2F2720C754DD286B860B7384B2 /* GKActionSheetPickerItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = GKActionSheetPickerItem.m; sourceTree = "<group>"; };
+		E7A83DAE2740215CEB1BD7F826D5D4E9 /* Pods-GKActionSheetPicker_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GKActionSheetPicker_Example.release.xcconfig"; sourceTree = "<group>"; };
+		EA0095D5984268B78521D8B4D916D5C1 /* Pods-GKActionSheetPicker_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GKActionSheetPicker_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2FFDCA2960BE3940EED839874F9A990B /* Frameworks */ = {
+		3D85DBEA32E8B9046F4DF1B15E05A051 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41A087D5955FA5272F90D2069C1B19C3 /* Foundation.framework in Frameworks */,
+				A5EAC70646D815037C35347DB97A619E /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BE91F11FDF70A240467C4DF8BC412269 /* Frameworks */ = {
+		7C477D3B13D250B5C5DB0B9B5C17E566 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				584D01A37B4EC74181A6C9A537153819 /* Foundation.framework in Frameworks */,
+				7BE8324429C45FA900202B55E9957C29 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CE06EF354970DA0D7495F61A8672842C /* Frameworks */ = {
+		8A5C9891B469CFC486CC3B019C3A6EB9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F1336BF4561A5167E829D1C70C762A84 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				899F6156B486551FDC7B5DB149BFFB47 /* Foundation.framework in Frameworks */,
+				2F84FD79929A82794A24EF9428D5BB65 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4736DA311BB56F7F001DFA8D /* Assets */ = {
+		02331BD98B7197E3B051BB14EE7FB9DD /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				4736DA321BB56F7F001DFA8D /* .gitkeep */,
-				4736DA331BB56F7F001DFA8D /* countries.json */,
+				E98DF74643C2EB82787C4EAD1584362F /* Pod */,
 			);
-			path = Assets;
+			name = Resources;
 			sourceTree = "<group>";
 		};
-		53F661C0CA7190D2CF05023FB33D61E4 /* iOS */ = {
+		19E4BB7D6AF377C6561AFFD7D479A0E4 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				B7189F7B263DA18CCD5A35C5787A75D5 /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		5F848CD9603AAA7B970955CCE603BC19 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				80715FC49CAA18A8C4B8B015C6BA2575 /* GKActionSheetPicker */,
+				E3118A75BC90373B7E9836F7CF1E44B2 /* GKActionSheetPicker */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		60E533B85A667885ADDCD3FBE99B2D3B /* Support Files */ = {
+		5CCAB782F03E8EFC6919E85A6D3A328C /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				B1331A2B93B4B0058AEB1AC1980232D7 /* GKActionSheetPicker.modulemap */,
-				40F7DDECA972B5E14DF5D70F2FCB81E2 /* GKActionSheetPicker.xcconfig */,
-				63BB83B6BB87655C5535BA3422286EE4 /* GKActionSheetPicker-Private.xcconfig */,
-				95E695EA45816F60DF0DEAC2100238B6 /* GKActionSheetPicker-dummy.m */,
-				49DDD28119FC97F5EC12AED6D583E645 /* GKActionSheetPicker-prefix.pch */,
-				4C3D4EDC7C2AE3B5FB13B3897EDDF972 /* GKActionSheetPicker-umbrella.h */,
-				8F03D07AC1AFAE74ACB1BAE28D99798B /* Info.plist */,
+				BADAE4E3B43F0D33A2E14C6B2AE71F12 /* Classes */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/GKActionSheetPicker";
+			name = Pod;
+			path = Pod;
+			sourceTree = "<group>";
+		};
+		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
-				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
-				5F848CD9603AAA7B970955CCE603BC19 /* Development Pods */,
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				19E4BB7D6AF377C6561AFFD7D479A0E4 /* Development Pods */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				CCA510CFBEA2D207524CDA0D73C3B561 /* Products */,
+				D512CC69425C33930C121A1DE987E5FD /* Products */,
 				D0E657BB26C26B8C544D54A85F543EED /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		80715FC49CAA18A8C4B8B015C6BA2575 /* GKActionSheetPicker */ = {
-			isa = PBXGroup;
-			children = (
-				F87DE8FF69732E59F47A88A737BC68C7 /* Pod */,
-				60E533B85A667885ADDCD3FBE99B2D3B /* Support Files */,
-			);
-			name = GKActionSheetPicker;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		84B2705740FD0C8F4B4F7135481031AC /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				4780051D1BA177290059B241 /* GKActionSheetPicker.h */,
-				4780051E1BA177290059B241 /* GKActionSheetPicker.m */,
-				478005231BA194FC0059B241 /* GKActionSheetPickerItem.h */,
-				478005241BA194FC0059B241 /* GKActionSheetPickerItem.m */,
-			);
-			path = Classes;
 			sourceTree = "<group>";
 		};
 		93D39CCC1D5C185D08B07869E37F7228 /* Pods-GKActionSheetPicker_Tests */ = {
@@ -206,34 +158,49 @@
 				14B88079B306299537C8B817105EE0EE /* Pods-GKActionSheetPicker_Tests.modulemap */,
 				978EB4D1D78A5695C20D66D5D1873F5E /* Pods-GKActionSheetPicker_Tests-acknowledgements.markdown */,
 				2BF7A45C8395BF9F13ECE1FF4A72B250 /* Pods-GKActionSheetPicker_Tests-acknowledgements.plist */,
-				CF0FB3460B093985DD09969A72EC63C3 /* Pods-GKActionSheetPicker_Tests-dummy.m */,
+				7923E1ABB218B3D0D17D253EE7E9A7EC /* Pods-GKActionSheetPicker_Tests-dummy.m */,
 				23F0A8B5558B5FFCF066268E4116EC78 /* Pods-GKActionSheetPicker_Tests-frameworks.sh */,
 				C4095B90A7E5FDE1008D4FC2CD884E4D /* Pods-GKActionSheetPicker_Tests-resources.sh */,
-				537AB097C099A54F2A8C29B78D1C2AB0 /* Pods-GKActionSheetPicker_Tests-umbrella.h */,
-				3D4C2C7F69FE12F602B5D88013DF9E7A /* Pods-GKActionSheetPicker_Tests.debug.xcconfig */,
-				F2F4F9C94AF602637A457D47243AED9E /* Pods-GKActionSheetPicker_Tests.release.xcconfig */,
+				27C5CD86FEE06627E7AACEA1B6374314 /* Pods-GKActionSheetPicker_Tests-umbrella.h */,
+				EA0095D5984268B78521D8B4D916D5C1 /* Pods-GKActionSheetPicker_Tests.debug.xcconfig */,
+				443A5F65EFD4BB73519981FFDDABCEE5 /* Pods-GKActionSheetPicker_Tests.release.xcconfig */,
 			);
 			name = "Pods-GKActionSheetPicker_Tests";
 			path = "Target Support Files/Pods-GKActionSheetPicker_Tests";
 			sourceTree = "<group>";
 		};
+		BADAE4E3B43F0D33A2E14C6B2AE71F12 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D64DC21BB5E1C2ED286DCA15615929E8 /* GKActionSheetPicker.h */,
+				1A7D41E04FDA38F5E9FC5462EEA585EA /* GKActionSheetPicker.m */,
+				986AA64A2B6F2F116DEA138E09AEEE9E /* GKActionSheetPickerItem.h */,
+				E1C25A2F2720C754DD286B860B7384B2 /* GKActionSheetPickerItem.m */,
+			);
+			name = Classes;
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				53F661C0CA7190D2CF05023FB33D61E4 /* iOS */,
+				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		CCA510CFBEA2D207524CDA0D73C3B561 /* Products */ = {
+		C381E30B705F7E00929D3B0D2E3A85B8 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				FC9E991470DB3B42A5B81B33B9CD9EF2 /* GKActionSheetPicker.bundle */,
-				E2EEDABBCAC943F30F80271D64276DB2 /* GKActionSheetPicker.framework */,
-				4E6DA60D77BD10449AB3DF7C6ED5EA2C /* Pods_GKActionSheetPicker_Example.framework */,
-				4AED10E8758063973C876F82BE7BC8B3 /* Pods_GKActionSheetPicker_Tests.framework */,
+				0D303D73ECB5056277FBB447114C91A4 /* GKActionSheetPicker.modulemap */,
+				7D815AF85A209C30CE40878A9495E6CB /* GKActionSheetPicker.xcconfig */,
+				2FC8AB6C7CBED4F3AD814AC4B3E5E185 /* GKActionSheetPicker-dummy.m */,
+				DA0C48EC8488DFF6A44ECF5B94D2DE7E /* GKActionSheetPicker-prefix.pch */,
+				2728D07BD5516D59267ADE29EE0F4A03 /* GKActionSheetPicker-umbrella.h */,
+				0FA3E3BE6A5ABFC89549B4D6755A2254 /* Info.plist */,
 			);
-			name = Products;
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/GKActionSheetPicker";
 			sourceTree = "<group>";
 		};
 		D0E657BB26C26B8C544D54A85F543EED /* Targets Support Files */ = {
@@ -245,6 +212,45 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		D512CC69425C33930C121A1DE987E5FD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				095D9ADE6CEBF1D1F803C17481013665 /* GKActionSheetPicker.framework */,
+				64DB65ECD39CC78BDD5773586D38518F /* Pods_GKActionSheetPicker_Example.framework */,
+				1D9134652FF694D81385A54FD2C89A62 /* Pods_GKActionSheetPicker_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DE485130A675EE6402A7AD1F78C41380 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				CBEC6358A3FCA795D4AADC9E916F7988 /* countries.json */,
+			);
+			name = Assets;
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		E3118A75BC90373B7E9836F7CF1E44B2 /* GKActionSheetPicker */ = {
+			isa = PBXGroup;
+			children = (
+				5CCAB782F03E8EFC6919E85A6D3A328C /* Pod */,
+				02331BD98B7197E3B051BB14EE7FB9DD /* Resources */,
+				C381E30B705F7E00929D3B0D2E3A85B8 /* Support Files */,
+			);
+			name = GKActionSheetPicker;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		E98DF74643C2EB82787C4EAD1584362F /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				DE485130A675EE6402A7AD1F78C41380 /* Assets */,
+			);
+			name = Pod;
+			path = Pod;
+			sourceTree = "<group>";
+		};
 		F2FAC47473F904BFCFB1939DFC807672 /* Pods-GKActionSheetPicker_Example */ = {
 			isa = PBXGroup;
 			children = (
@@ -252,129 +258,101 @@
 				8CF28147C44C0C8EF285CD9A8A494D64 /* Pods-GKActionSheetPicker_Example.modulemap */,
 				DDB0B1AB92B9ED7F5CA2F03CEA01DDAC /* Pods-GKActionSheetPicker_Example-acknowledgements.markdown */,
 				13EEA457639B45881E5B65F73EE5944B /* Pods-GKActionSheetPicker_Example-acknowledgements.plist */,
-				37274B38B8AEA49A4084977FC616F7B9 /* Pods-GKActionSheetPicker_Example-dummy.m */,
+				0F67410063EF6AA907240D28C6262D2C /* Pods-GKActionSheetPicker_Example-dummy.m */,
 				48F089B0BFC9C34A8372B6D5BA188C37 /* Pods-GKActionSheetPicker_Example-frameworks.sh */,
 				A3247817A036539C4DF1C6091E33B319 /* Pods-GKActionSheetPicker_Example-resources.sh */,
-				AF47A31EE810CA210FD514811E76B2F4 /* Pods-GKActionSheetPicker_Example-umbrella.h */,
-				0E3C414B9032CB0FBD2896C820E12F25 /* Pods-GKActionSheetPicker_Example.debug.xcconfig */,
-				979DCDBC2EBE7F3160E1E9E7CBA50F96 /* Pods-GKActionSheetPicker_Example.release.xcconfig */,
+				69B0C484EE23007B5BA13E2194BEAE88 /* Pods-GKActionSheetPicker_Example-umbrella.h */,
+				34C6634D421CE741D00B1DAA487737C1 /* Pods-GKActionSheetPicker_Example.debug.xcconfig */,
+				E7A83DAE2740215CEB1BD7F826D5D4E9 /* Pods-GKActionSheetPicker_Example.release.xcconfig */,
 			);
 			name = "Pods-GKActionSheetPicker_Example";
 			path = "Target Support Files/Pods-GKActionSheetPicker_Example";
 			sourceTree = "<group>";
 		};
-		F87DE8FF69732E59F47A88A737BC68C7 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				4736DA311BB56F7F001DFA8D /* Assets */,
-				84B2705740FD0C8F4B4F7135481031AC /* Classes */,
-			);
-			path = Pod;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		49518F6097A58479E880096CFB9D9867 /* Headers */ = {
+		9B254C4DF5854A40322A9EAD683ECCE8 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				478005251BA194FC0059B241 /* GKActionSheetPickerItem.h in Headers */,
-				4780051F1BA177290059B241 /* GKActionSheetPicker.h in Headers */,
-				595AB194D09F349F07C1E021553BE535 /* GKActionSheetPicker-umbrella.h in Headers */,
+				F8B4099188743BC98F637AC388D9660E /* Pods-GKActionSheetPicker_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		509AEDD1E5D86A3FA05DFDBBF9A6FA1E /* Headers */ = {
+		DD38F94C0BD2518B3FF3B8E4BD6BAC1C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44FBF8FE0E71E0A5CF58DC3CB9D4DA35 /* Pods-GKActionSheetPicker_Tests-umbrella.h in Headers */,
+				100C252ACCAD8A9ED7AA7F5FE9D6C569 /* Pods-GKActionSheetPicker_Tests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D35877D24BA841FF530DCF4F39D248C0 /* Headers */ = {
+		E849523B8B69033596CAC40CB3D59C3B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				409EF65213E61579A34594C3BF5418AB /* Pods-GKActionSheetPicker_Example-umbrella.h in Headers */,
-				470BD4971BA80FC400ED2661 /* GKActionSheetPickerItem.h in Headers */,
+				0B36C0664FCC61AB556D92400292AF6A /* GKActionSheetPicker-umbrella.h in Headers */,
+				4A99ED51CF7FDE9B7082C79C89DF6E7F /* GKActionSheetPicker.h in Headers */,
+				B704E3AC340DFAD705F7BE3F78CED177 /* GKActionSheetPickerItem.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		473FA5A8007B0AEC2DFBF1E8389D1900 /* Pods-GKActionSheetPicker_Example */ = {
+		74D1B2E1C98DBFE98EAC32300F217494 /* Pods-GKActionSheetPicker_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8CF299C31811F013929A9FF2AD5C01D5 /* Build configuration list for PBXNativeTarget "Pods-GKActionSheetPicker_Example" */;
+			buildConfigurationList = D0DEDC18CEA59FE13508679008DE8A48 /* Build configuration list for PBXNativeTarget "Pods-GKActionSheetPicker_Tests" */;
 			buildPhases = (
-				E35AD3D3135C2E0156F9E2E1FA941613 /* Sources */,
-				F1336BF4561A5167E829D1C70C762A84 /* Frameworks */,
-				D35877D24BA841FF530DCF4F39D248C0 /* Headers */,
+				0C15F5B6CEC0BE9B50BA85566659B75C /* Sources */,
+				7C477D3B13D250B5C5DB0B9B5C17E566 /* Frameworks */,
+				DD38F94C0BD2518B3FF3B8E4BD6BAC1C /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				DB3B6A2DB4E6F2E47F6896DFBF2223BB /* PBXTargetDependency */,
-			);
-			name = "Pods-GKActionSheetPicker_Example";
-			productName = "Pods-GKActionSheetPicker_Example";
-			productReference = 4E6DA60D77BD10449AB3DF7C6ED5EA2C /* Pods_GKActionSheetPicker_Example.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		6482B647C700C065D7D086A068AE2EB6 /* GKActionSheetPicker-GKActionSheetPicker */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 53534E40E69BF4C70CEF875E7FDC4EF1 /* Build configuration list for PBXNativeTarget "GKActionSheetPicker-GKActionSheetPicker" */;
-			buildPhases = (
-				8BEB5462DB1DF1DA3E351C7B0F7F2C88 /* Sources */,
-				CE06EF354970DA0D7495F61A8672842C /* Frameworks */,
-				C02ABE3D00DAB3600C19B137EE5F123D /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "GKActionSheetPicker-GKActionSheetPicker";
-			productName = "GKActionSheetPicker-GKActionSheetPicker";
-			productReference = FC9E991470DB3B42A5B81B33B9CD9EF2 /* GKActionSheetPicker.bundle */;
-			productType = "com.apple.product-type.bundle";
-		};
-		739217D60065B3B0981505F1C62148C2 /* GKActionSheetPicker */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F2E118BE427BEB2028ABB645986287F5 /* Build configuration list for PBXNativeTarget "GKActionSheetPicker" */;
-			buildPhases = (
-				9411B6F71E45E69EBAB5CBBFCED12FC2 /* Sources */,
-				BE91F11FDF70A240467C4DF8BC412269 /* Frameworks */,
-				41FC031BDCD175FA92BEA3B20F697C21 /* Resources */,
-				49518F6097A58479E880096CFB9D9867 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				8BD5B4D8AE59DFB244311180A1A07838 /* PBXTargetDependency */,
-			);
-			name = GKActionSheetPicker;
-			productName = GKActionSheetPicker;
-			productReference = E2EEDABBCAC943F30F80271D64276DB2 /* GKActionSheetPicker.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		8AA4658776B344CF8C0D4D5C24B10EDF /* Pods-GKActionSheetPicker_Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 202D9489FD58F63060CF1AF6B06F5555 /* Build configuration list for PBXNativeTarget "Pods-GKActionSheetPicker_Tests" */;
-			buildPhases = (
-				DE81DBDA9FE62CE0FD9356D9A49B72C5 /* Sources */,
-				2FFDCA2960BE3940EED839874F9A990B /* Frameworks */,
-				509AEDD1E5D86A3FA05DFDBBF9A6FA1E /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				67F9C2E7871449390C4394B5574A2941 /* PBXTargetDependency */,
+				20CC2216019CA8B9B9792654A6801CCA /* PBXTargetDependency */,
 			);
 			name = "Pods-GKActionSheetPicker_Tests";
 			productName = "Pods-GKActionSheetPicker_Tests";
-			productReference = 4AED10E8758063973C876F82BE7BC8B3 /* Pods_GKActionSheetPicker_Tests.framework */;
+			productReference = 1D9134652FF694D81385A54FD2C89A62 /* Pods_GKActionSheetPicker_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9ECED5F96B4144BA1D74C50E06371449 /* GKActionSheetPicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF69D3FB960F9AB325AF1DD23CC3F0D5 /* Build configuration list for PBXNativeTarget "GKActionSheetPicker" */;
+			buildPhases = (
+				1903CF49C4B46DE086CA4DB9E2B7F2D8 /* Sources */,
+				8A5C9891B469CFC486CC3B019C3A6EB9 /* Frameworks */,
+				E849523B8B69033596CAC40CB3D59C3B /* Headers */,
+				095121DBF91EE2D0F06B332FDCAFFF84 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GKActionSheetPicker;
+			productName = GKActionSheetPicker;
+			productReference = 095D9ADE6CEBF1D1F803C17481013665 /* GKActionSheetPicker.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CD3DBB70EB2FEE21A68296F144A7EC88 /* Pods-GKActionSheetPicker_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D7EA74D50054F6FCEB174DEF204D056 /* Build configuration list for PBXNativeTarget "Pods-GKActionSheetPicker_Example" */;
+			buildPhases = (
+				82E2E7A04E03A4CCD0899818281270EC /* Sources */,
+				3D85DBEA32E8B9046F4DF1B15E05A051 /* Frameworks */,
+				9B254C4DF5854A40322A9EAD683ECCE8 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				470E26D309CD9A88F6F07D24832D3119 /* PBXTargetDependency */,
+			);
+			name = "Pods-GKActionSheetPicker_Example";
+			productName = "Pods-GKActionSheetPicker_Example";
+			productReference = 64DB65ECD39CC78BDD5773586D38518F /* Pods_GKActionSheetPicker_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -383,7 +361,7 @@
 		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0700;
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0700;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
@@ -394,100 +372,78 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = CCA510CFBEA2D207524CDA0D73C3B561 /* Products */;
+			productRefGroup = D512CC69425C33930C121A1DE987E5FD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				739217D60065B3B0981505F1C62148C2 /* GKActionSheetPicker */,
-				6482B647C700C065D7D086A068AE2EB6 /* GKActionSheetPicker-GKActionSheetPicker */,
-				473FA5A8007B0AEC2DFBF1E8389D1900 /* Pods-GKActionSheetPicker_Example */,
-				8AA4658776B344CF8C0D4D5C24B10EDF /* Pods-GKActionSheetPicker_Tests */,
+				9ECED5F96B4144BA1D74C50E06371449 /* GKActionSheetPicker */,
+				CD3DBB70EB2FEE21A68296F144A7EC88 /* Pods-GKActionSheetPicker_Example */,
+				74D1B2E1C98DBFE98EAC32300F217494 /* Pods-GKActionSheetPicker_Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		41FC031BDCD175FA92BEA3B20F697C21 /* Resources */ = {
+		095121DBF91EE2D0F06B332FDCAFFF84 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4736DA351BB56F7F001DFA8D /* countries.json in Resources */,
-				6056CABEDB2D9736C96234881E9A05C8 /* GKActionSheetPicker.bundle in Resources */,
-				4736DA341BB56F7F001DFA8D /* .gitkeep in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C02ABE3D00DAB3600C19B137EE5F123D /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				517AB50C979C74213A8D16FD3F87F71C /* countries.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		8BEB5462DB1DF1DA3E351C7B0F7F2C88 /* Sources */ = {
+		0C15F5B6CEC0BE9B50BA85566659B75C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BCAF4D2A1CE511110ED5EB3C1250F8E /* Pods-GKActionSheetPicker_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9411B6F71E45E69EBAB5CBBFCED12FC2 /* Sources */ = {
+		1903CF49C4B46DE086CA4DB9E2B7F2D8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F15E48F80D64670903B68CBAE64ABD52 /* GKActionSheetPicker-dummy.m in Sources */,
-				478005271BA194FC0059B241 /* GKActionSheetPickerItem.m in Sources */,
-				478005201BA177290059B241 /* GKActionSheetPicker.m in Sources */,
+				AC969680F2F6B865023D1A83A918C2B0 /* GKActionSheetPicker-dummy.m in Sources */,
+				291B55D5A11E688DA7C46A2C23E7CC35 /* GKActionSheetPicker.m in Sources */,
+				89D7F73E2BD91EBB35D7786262934556 /* GKActionSheetPickerItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DE81DBDA9FE62CE0FD9356D9A49B72C5 /* Sources */ = {
+		82E2E7A04E03A4CCD0899818281270EC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				91F52C038F7CD707826A08ABDE73B9E2 /* Pods-GKActionSheetPicker_Tests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E35AD3D3135C2E0156F9E2E1FA941613 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				71C37AD9AC6816C3CB5AEE5CC4464798 /* Pods-GKActionSheetPicker_Example-dummy.m in Sources */,
+				58002546089D860E37E3F13864ACDC5B /* Pods-GKActionSheetPicker_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		67F9C2E7871449390C4394B5574A2941 /* PBXTargetDependency */ = {
+		20CC2216019CA8B9B9792654A6801CCA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = GKActionSheetPicker;
-			target = 739217D60065B3B0981505F1C62148C2 /* GKActionSheetPicker */;
-			targetProxy = 4A4C1EBCD661FB41659CB76A0D201B31 /* PBXContainerItemProxy */;
+			target = 9ECED5F96B4144BA1D74C50E06371449 /* GKActionSheetPicker */;
+			targetProxy = 9BD722E041C6D762E0FC11E1004A8542 /* PBXContainerItemProxy */;
 		};
-		8BD5B4D8AE59DFB244311180A1A07838 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "GKActionSheetPicker-GKActionSheetPicker";
-			target = 6482B647C700C065D7D086A068AE2EB6 /* GKActionSheetPicker-GKActionSheetPicker */;
-			targetProxy = F9B7AA2C82CF2EDB20116CC3243FCFBB /* PBXContainerItemProxy */;
-		};
-		DB3B6A2DB4E6F2E47F6896DFBF2223BB /* PBXTargetDependency */ = {
+		470E26D309CD9A88F6F07D24832D3119 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = GKActionSheetPicker;
-			target = 739217D60065B3B0981505F1C62148C2 /* GKActionSheetPicker */;
-			targetProxy = 8BE7F87050B888895A943235CB37E564 /* PBXContainerItemProxy */;
+			target = 9ECED5F96B4144BA1D74C50E06371449 /* GKActionSheetPicker */;
+			targetProxy = FCB80F6AC8B581A0B7D16AF1209B71D4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		03CA91998D6773EC5D02B3DB87B8353E /* Release */ = {
+		015A368F878AC3E2CEAE21DDE8026304 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -501,74 +457,14 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		07B857E0954AC1C28BDCFE1E8E909F72 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F2F4F9C94AF602637A457D47243AED9E /* Pods-GKActionSheetPicker_Tests.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-GKActionSheetPicker_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-GKActionSheetPicker_Tests/Pods-GKActionSheetPicker_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_GKActionSheetPicker_Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		0B57334D6C23DADAA4F7D802A5760EB2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
 					"DEBUG=1",
 					"$(inherited)",
 				);
@@ -579,33 +475,40 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		209D2F532A6214F354F8BABFE094B653 /* Release */ = {
+		0C8939995A1BEBC2C8892D356F091185 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 979DCDBC2EBE7F3160E1E9E7CBA50F96 /* Pods-GKActionSheetPicker_Example.release.xcconfig */;
+			baseConfigurationReference = 34C6634D421CE741D00B1DAA487737C1 /* Pods-GKActionSheetPicker_Example.debug.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-GKActionSheetPicker_Example/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-GKActionSheetPicker_Example/Pods-GKActionSheetPicker_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = Pods_GKActionSheetPicker_Example;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -613,55 +516,34 @@
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
-		282F16CF4319DC69554A81091083A39F /* Release */ = {
+		2B3844DC62D5D800F38F24A7D5C0E5C9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 63BB83B6BB87655C5535BA3422286EE4 /* GKActionSheetPicker-Private.xcconfig */;
+			baseConfigurationReference = EA0095D5984268B78521D8B4D916D5C1 /* Pods-GKActionSheetPicker_Tests.debug.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 0.1.0;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 0.1.0;
-				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/GKActionSheetPicker/GKActionSheetPicker-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/GKActionSheetPicker/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/GKActionSheetPicker/GKActionSheetPicker.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = GKActionSheetPicker;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		6B5E37238B7C7191164EFD9370CED7F9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3D4C2C7F69FE12F602B5D88013DF9E7A /* Pods-GKActionSheetPicker_Tests.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-GKActionSheetPicker_Tests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-GKActionSheetPicker_Tests/Pods-GKActionSheetPicker_Tests.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = Pods_GKActionSheetPicker_Tests;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -671,38 +553,32 @@
 			};
 			name = Debug;
 		};
-		A75036E29A9F94A13981B0A2228D7D21 /* Debug */ = {
+		33C858C79B13E6295A66F8A38FE39A9C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 63BB83B6BB87655C5535BA3422286EE4 /* GKActionSheetPicker-Private.xcconfig */;
+			baseConfigurationReference = E7A83DAE2740215CEB1BD7F826D5D4E9 /* Pods-GKActionSheetPicker_Example.release.xcconfig */;
 			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = GKActionSheetPicker;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		AB8F61D301CE32CB3A35CF13E48A95DA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0E3C414B9032CB0FBD2896C820E12F25 /* Pods-GKActionSheetPicker_Example.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-GKActionSheetPicker_Example/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-GKActionSheetPicker_Example/Pods-GKActionSheetPicker_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = Pods_GKActionSheetPicker_Example;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -710,23 +586,133 @@
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
-		AFD45A6BC0F8FAD5D418708C4651FD7C /* Debug */ = {
+		44CDBB6D11DE06DB64D6268622BDC47E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 63BB83B6BB87655C5535BA3422286EE4 /* GKActionSheetPicker-Private.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 0.1.0;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4F7285EB0AF8AAB5D1F6AF43E6D26289 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 443A5F65EFD4BB73519981FFDDABCEE5 /* Pods-GKActionSheetPicker_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 0.1.0;
-				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-GKActionSheetPicker_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GKActionSheetPicker_Tests/Pods-GKActionSheetPicker_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_GKActionSheetPicker_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7004A3D381D82D489892FA83359D591F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D815AF85A209C30CE40878A9495E6CB /* GKActionSheetPicker.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/GKActionSheetPicker/GKActionSheetPicker-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/GKActionSheetPicker/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GKActionSheetPicker/GKActionSheetPicker.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = GKActionSheetPicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8BA61123C7BA20628589B95B911C1042 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D815AF85A209C30CE40878A9495E6CB /* GKActionSheetPicker.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/GKActionSheetPicker/GKActionSheetPicker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GKActionSheetPicker/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/GKActionSheetPicker/GKActionSheetPicker.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -739,62 +725,41 @@
 			};
 			name = Debug;
 		};
-		B2F0FE83365126D5543A2E534957879E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 63BB83B6BB87655C5535BA3422286EE4 /* GKActionSheetPicker-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = GKActionSheetPicker;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		202D9489FD58F63060CF1AF6B06F5555 /* Build configuration list for PBXNativeTarget "Pods-GKActionSheetPicker_Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				6B5E37238B7C7191164EFD9370CED7F9 /* Debug */,
-				07B857E0954AC1C28BDCFE1E8E909F72 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0B57334D6C23DADAA4F7D802A5760EB2 /* Debug */,
-				03CA91998D6773EC5D02B3DB87B8353E /* Release */,
+				015A368F878AC3E2CEAE21DDE8026304 /* Debug */,
+				44CDBB6D11DE06DB64D6268622BDC47E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		53534E40E69BF4C70CEF875E7FDC4EF1 /* Build configuration list for PBXNativeTarget "GKActionSheetPicker-GKActionSheetPicker" */ = {
+		6D7EA74D50054F6FCEB174DEF204D056 /* Build configuration list for PBXNativeTarget "Pods-GKActionSheetPicker_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A75036E29A9F94A13981B0A2228D7D21 /* Debug */,
-				B2F0FE83365126D5543A2E534957879E /* Release */,
+				0C8939995A1BEBC2C8892D356F091185 /* Debug */,
+				33C858C79B13E6295A66F8A38FE39A9C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8CF299C31811F013929A9FF2AD5C01D5 /* Build configuration list for PBXNativeTarget "Pods-GKActionSheetPicker_Example" */ = {
+		D0DEDC18CEA59FE13508679008DE8A48 /* Build configuration list for PBXNativeTarget "Pods-GKActionSheetPicker_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AB8F61D301CE32CB3A35CF13E48A95DA /* Debug */,
-				209D2F532A6214F354F8BABFE094B653 /* Release */,
+				2B3844DC62D5D800F38F24A7D5C0E5C9 /* Debug */,
+				4F7285EB0AF8AAB5D1F6AF43E6D26289 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F2E118BE427BEB2028ABB645986287F5 /* Build configuration list for PBXNativeTarget "GKActionSheetPicker" */ = {
+		EF69D3FB960F9AB325AF1DD23CC3F0D5 /* Build configuration list for PBXNativeTarget "GKActionSheetPicker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AFD45A6BC0F8FAD5D418708C4651FD7C /* Debug */,
-				282F16CF4319DC69554A81091083A39F /* Release */,
+				8BA61123C7BA20628589B95B911C1042 /* Debug */,
+				7004A3D381D82D489892FA83359D591F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -243,6 +243,7 @@ typedef NS_ENUM(NSUInteger, GKActionSheetPickerType) {
         _pickerView = [UIPickerView new];
         _pickerView.delegate = self;
         _pickerView.dataSource = self;
+        _pickerView.tintColor = self.tintColor;
     }
     
     return _pickerView;
@@ -252,6 +253,7 @@ typedef NS_ENUM(NSUInteger, GKActionSheetPickerType) {
 {
     if (!_datePicker) {
         _datePicker = [UIDatePicker new];
+        _datePicker.tintColor = self.tintColor;
     }
     
     return _datePicker;
@@ -263,6 +265,7 @@ typedef NS_ENUM(NSUInteger, GKActionSheetPickerType) {
         _toolBar = [UIToolbar new];
         _toolBar.delegate = self;
         _toolBar.autoresizingMask = UIViewAutoresizingFlexibleWidth;
+        _toolBar.tintColor = self.tintColor;
     }
     
     return _toolBar;
@@ -309,6 +312,7 @@ typedef NS_ENUM(NSUInteger, GKActionSheetPickerType) {
     if (!_cancelButton) {
         _cancelButton = [[UIBarButtonItem alloc] initWithTitle:self.cancelButtonTitle style:UIBarButtonItemStylePlain target:self action:@selector(cancelButtonPressed:)];
         _cancelButton.imageInsets = UIEdgeInsetsMake(0, 20.f, 0, 20.f);
+        _cancelButton.tintColor = self.tintColor;
     }
     
     return _cancelButton;
@@ -318,6 +322,7 @@ typedef NS_ENUM(NSUInteger, GKActionSheetPickerType) {
 {
     if (!_selectButton) {
         _selectButton = [[UIBarButtonItem alloc] initWithTitle:self.selectButtonTitle style:UIBarButtonItemStyleDone target:self action:@selector(selectButtonPressed:)];
+        _selectButton.tintColor = self.tintColor;
     }
     
     return _selectButton;

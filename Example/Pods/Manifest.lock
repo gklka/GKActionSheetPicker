@@ -1,5 +1,5 @@
 PODS:
-  - GKActionSheetPicker (0.1.0)
+  - GKActionSheetPicker (0.3)
 
 DEPENDENCIES:
   - GKActionSheetPicker (from `../`)
@@ -9,6 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  GKActionSheetPicker: 82650634fcf1db8356dd9b74f5780eb155c0e484
+  GKActionSheetPicker: 5cd719b71dd42eb2194a711da427256cd76617e2
 
-COCOAPODS: 0.38.2
+PODFILE CHECKSUM: 1d464bc24a5adfb0472fdd2fa8dac57a30503706
+
+COCOAPODS: 1.2.0
