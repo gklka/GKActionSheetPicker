@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "GKActionSheetPicker"
-  s.version      = "0.3"
+  s.version      = "0.4"
   s.summary      = "An easy-to-use controller for presenting UIPickerView in overlay view"
 
   s.description  = <<-DESC
@@ -77,7 +77,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/gklka/GKActionSheetPicker.git", :tag => "0.3" }
+  s.source       = { :git => "https://github.com/gklka/GKActionSheetPicker.git", :tag => "0.4" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
