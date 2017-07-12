@@ -8,6 +8,4 @@ end
 
 target 'GKActionSheetPicker_Tests' do
   pod "GKActionSheetPicker", :path => "../"
-
-  
 end

@@ -254,7 +254,7 @@ typedef NS_ENUM(NSUInteger, GKActionSheetPickerDismissType) {
 /**
  Select a country on the country picker by giving it's ISO3166-1-Alpha-2 2-letter country code
  
- @param countryCode ISO3166-1-Alpha-2 2-letter country code
+ @param countryName English name of the country
  
  @note Call this after -presentPickerOnView:
  */
@@ -263,7 +263,7 @@ typedef NS_ENUM(NSUInteger, GKActionSheetPickerDismissType) {
 /**
  Select a country on the country picker by giving it's english name
  
- @param countryName English name of the country
+ @param countryCode ISO3166-1-Alpha-2 2-letter country code
  
  @note Call this after -presentPickerOnView:
  */
