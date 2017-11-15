@@ -444,6 +444,7 @@ typedef NS_ENUM(NSUInteger, GKActionSheetPickerType) {
         
         self.pickerView.frame = CGRectMake(0, ToolbarHeight, hostFrame.size.width, PickerViewHeight);
         self.pickerView.autoresizingMask = UIViewAutoresizingFlexibleWidth;
+        [self.pickerView selectRow:0 inComponent:0 animated:YES];
         [self.pickerContainerView addSubview:self.pickerView];
         
     } else if (self.pickerType == GKActionSheetPickerTypeDate) {
