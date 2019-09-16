@@ -231,7 +231,11 @@ typedef NS_ENUM(NSUInteger, GKActionSheetPickerType) {
 {
     if (!_pickerContainerView) {
         _pickerContainerView = [UIView new];
-        _pickerContainerView.backgroundColor = [UIColor whiteColor];
+        if (@available(iOS 13, *)) {
+            _pickerContainerView.backgroundColor = [UIColor systemBackgroundColor];
+        } else {
+            _pickerContainerView.backgroundColor = [UIColor whiteColor];
+        }
     }
     
     return _pickerContainerView;
@@ -332,7 +336,11 @@ typedef NS_ENUM(NSUInteger, GKActionSheetPickerType) {
     if (!_titleLabel) {
         _titleLabel = [[UILabel alloc] initWithFrame:CGRectZero];
         _titleLabel.text = self.title;
-        _titleLabel.textColor = [UIColor darkTextColor];
+        if (@available(iOS 13, *)) {
+            _titleLabel.textColor = [UIColor labelColor];
+        } else {
+            _titleLabel.textColor = [UIColor darkTextColor];
+        }
         _titleLabel.font = [UIFont boldSystemFontOfSize:17.f];
         [_titleLabel sizeToFit];
     }
