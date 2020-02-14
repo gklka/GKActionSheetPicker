@@ -25,4 +25,11 @@
     return [NSString stringWithFormat:@"%@: %@", [super description], self.title];
 }
 
+- (BOOL)isEqual:(id)object
+{
+    if (![object isKindOfClass:[GKActionSheetPickerItem class]]) return NO;
+    GKActionSheetPickerItem *other = (GKActionSheetPickerItem *)object;
+    return [self.value isEqual:other.value];
+}
+
 @end
