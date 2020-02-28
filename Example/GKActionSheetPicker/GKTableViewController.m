@@ -28,6 +28,16 @@
 
 @implementation GKTableViewController
 
+#pragma mark - <UITableViewDataSource>
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return UITableViewAutomaticDimension;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 44.f;
+}
+
 #pragma mark - <UITableViewDelegate>
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -125,6 +135,12 @@
             
             // Set the title
             self.picker.title = @"Shorter Syntax";
+            
+            // Callback
+            __weak __typeof__(self) weakSelf = self;
+            self.picker.selectCallback = ^(NSString *selected) {
+                weakSelf.shorterSymbolDetailLabel.text = selected;
+            };
 
             // Present it
             [self.picker presentPickerOnView:self.view];
@@ -149,6 +165,29 @@
             
             // Set to the previously selected value
             [self.picker selectCountryByCountryCode:[self.countryRowSelectedCountryDictionary objectForKey:@"ISO3166-1-Alpha-2"]];
+        } else if (indexPath.row == 5) {
+            #pragma mark - Double line
+            
+            // Set the selectable items
+            NSArray *items = @[@"This is a very long line with Apple, which is good", @"Also long with Orange", @"You should always eat Peach, because it's healthy", @"The best fruit is Pearl", @"The red thing on pizzas is Tomato, which makes it good"];
+
+            // Create the picker
+            self.picker = [GKActionSheetPicker stringPickerWithItems:items selectCallback:^(id selected) {
+                // This code will be called when the user taps the "OK" button
+                
+                self.basicCellSelectedString = (NSString *)selected;
+                self.basicCellDetailLabel.text = (NSString *)selected;
+            
+            } cancelCallback:nil];
+            
+            // Set double height
+            self.picker.doubleLine = YES;
+            
+            // Present it
+            [self.picker presentPickerOnView:self.view];
+            
+            // Set to the previously selected value
+            [self.picker selectValue:self.basicCellSelectedString];
         }
         
     } else if (indexPath.section == 1) {

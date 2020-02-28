@@ -85,6 +85,9 @@ typedef NS_ENUM(NSUInteger, GKActionSheetPickerDismissType) {
 //! The title of the picker which will be displayed in the center, between the buttons
 @property (nonatomic, strong) NSString *title;
 
+//! If set, every item will have double height and can be 2 lines long.
+@property (nonatomic) BOOL doubleLine;
+
 #pragma mark - Control
 
 //! Array of selected values for each row respectively. Values are either `value` properties of `GKActionSheetPickerItem` objects or strings.

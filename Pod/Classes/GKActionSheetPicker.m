@@ -8,10 +8,11 @@
 
 #import "GKActionSheetPicker.h"
 
-#define AnimationDuration 0.3f
+#define AnimationDuration 0.25f
 #define PickerHeight 260.f
 #define PickerViewHeight 216.f
 #define ToolbarHeight 44.f
+#define CornerRadius 10.f
 
 typedef NS_ENUM(NSUInteger, GKActionSheetPickerType) {
     GKActionSheetPickerTypeString,
@@ -63,6 +64,7 @@ typedef NS_ENUM(NSUInteger, GKActionSheetPickerType) {
         self.isOpen = NO;
         self.dismissType = GKActionSheetPickerDismissTypeNone;
         self.cancelButtonEnabled = YES;
+        self.doubleLine = NO;
     }
     
     return self;
@@ -232,9 +234,15 @@ typedef NS_ENUM(NSUInteger, GKActionSheetPickerType) {
     if (!_pickerContainerView) {
         _pickerContainerView = [UIView new];
         if (@available(iOS 13, *)) {
-            _pickerContainerView.backgroundColor = [UIColor systemBackgroundColor];
+            _pickerContainerView.backgroundColor = [UIColor secondarySystemBackgroundColor];
         } else {
             _pickerContainerView.backgroundColor = [UIColor whiteColor];
+        }
+        
+        if (@available(iOS 11, *)) {
+            _pickerContainerView.layer.maskedCorners = kCALayerMinXMinYCorner | kCALayerMaxXMinYCorner;
+            _pickerContainerView.layer.cornerRadius = CornerRadius;
+            _pickerContainerView.layer.masksToBounds = YES;
         }
     }
     
@@ -386,6 +394,7 @@ typedef NS_ENUM(NSUInteger, GKActionSheetPickerType) {
     self.overlayLayerView.frame = hostFrame;
     self.overlayLayerView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     [view.window addSubview:self.overlayLayerView];
+    [self.overlayLayerView addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(cancelButtonPressed:)]];
     
     // Add click handler to overlay
     if (self.dismissType == GKActionSheetPickerDismissTypeSelect) {
@@ -494,7 +503,7 @@ typedef NS_ENUM(NSUInteger, GKActionSheetPickerType) {
         [self.overlayLayerView removeGestureRecognizer:[self.overlayLayerView.gestureRecognizers firstObject]];
     }];
     
-    [UIView animateWithDuration:AnimationDuration delay:0 options:UIViewAnimationOptionCurveEaseIn animations:^{
+    [UIView animateWithDuration:AnimationDuration delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
         self.pickerContainerView.frame = pickerContainerDestinationFrame;
     } completion:^(BOOL finished) {
         [[NSNotificationCenter defaultCenter] removeObserver:self];
@@ -657,6 +666,27 @@ typedef NS_ENUM(NSUInteger, GKActionSheetPickerType) {
     }
     
     return nil;
+}
+
+- (UIView *)pickerView:(UIPickerView *)pickerView viewForRow:(NSInteger)row forComponent:(NSInteger)component reusingView:(UIView *)view {
+    UILabel *label;
+    
+    if (view) {
+        label = (UILabel *)view;
+    } else {
+        label = [UILabel new];
+        label.numberOfLines = self.doubleLine ? 2 : 1;
+        label.textAlignment = NSTextAlignmentCenter;
+        label.font = [UIFont preferredFontForTextStyle:UIFontTextStyleTitle2];
+    }
+    
+    label.text = [self pickerView:pickerView titleForRow:row forComponent:component];
+    
+    return label;
+}
+
+- (CGFloat)pickerView:(UIPickerView *)pickerView rowHeightForComponent:(NSInteger)component {
+    return self.doubleLine ? [UIFont preferredFontForTextStyle:UIFontTextStyleTitle2].pointSize * 3.f : [UIFont preferredFontForTextStyle:UIFontTextStyleTitle2].pointSize * 1.5f;
 }
 
 #pragma mark - <UIPickerViewDelegate>
