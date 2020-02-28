@@ -28,34 +28,14 @@
 
 @implementation GKTableViewController
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-    
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
 #pragma mark - <UITableViewDelegate>
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 
     if (indexPath.section == 0) {
         if (indexPath.row == 0) {
-            /**-----------------------------------------------------------------------------
-             * @name Basic
-             * ----------------------------------------------------------------------------- */
+            #pragma mark - Basic
             
             // Set the selectable items
             NSArray *items = @[@"Apple", @"Orange", @"Peach", @"Pearl", @"Tomato"];
@@ -76,9 +56,7 @@
             [self.picker selectValue:self.basicCellSelectedString];
             
         } else if (indexPath.row == 1) {
-            /**-----------------------------------------------------------------------------
-             * @name Date
-             * ----------------------------------------------------------------------------- */
+            #pragma mark - Date
             
             self.picker = [GKActionSheetPicker datePickerWithMode:UIDatePickerModeDateAndTime from:[NSDate dateWithTimeIntervalSinceNow:-60*60*24*365] to:[NSDate new] interval:60*60*24 selectCallback:^(id selected) {
                 
@@ -99,9 +77,7 @@
             [self.picker selectDate:self.dateCellSelectedDate];
             
         } else if (indexPath.row == 2) {
-            /**-----------------------------------------------------------------------------
-             * @name Two rows
-             * ----------------------------------------------------------------------------- */
+            #pragma mark - Two rows
 
             // Set the selectable items
             NSArray *components = @[
@@ -139,10 +115,8 @@
 //            [self.picker selectIndex:1 inComponent:1];
             
         } else if (indexPath.row == 3) {
-            /**-----------------------------------------------------------------------------
-             * @name Shorter Syntax
-             * ----------------------------------------------------------------------------- */
-            
+            #pragma mark - Shorter syntax
+
             // Set the selectable items
             NSArray *items = @[@"Apple", @"Orange", @"Peach", @"Pearl", @"Tomato"];
             
@@ -159,10 +133,8 @@
             [self.picker selectValue:self.basicCellSelectedString];
             
         } else if (indexPath.row == 4) {
-            /**-----------------------------------------------------------------------------
-             * @name Country picker
-             * ----------------------------------------------------------------------------- */
-            
+            #pragma mark - Country picker
+
             // Create the picker
             self.picker = [GKActionSheetPicker countryPickerWithCallback:^(id selected) {
                 self.countryRowSelectedCountryDictionary = (NSDictionary *)selected;
@@ -182,10 +154,8 @@
     } else if (indexPath.section == 1) {
         
         if (indexPath.row == 0) {
-            /**-----------------------------------------------------------------------------
-             * @name Delegate
-             * ----------------------------------------------------------------------------- */
-            
+            #pragma mark - Delegate
+
             // Set the selectable items
             NSArray *items = @[@"Apple", @"Orange", @"Peach", @"Pearl", @"Tomato"];
             
@@ -201,10 +171,8 @@
 
             
         } else if (indexPath.row == 1) {
-            /**-----------------------------------------------------------------------------
-             * @name Custom Values
-             * ----------------------------------------------------------------------------- */
-            
+            #pragma mark - Custom values
+
             // Set the selectable items
             NSArray *items = @[
                                [GKActionSheetPickerItem pickerItemWithTitle:@"Apple" value:@0],
@@ -238,9 +206,7 @@
             [self.picker selectValue:self.customValuesSelectedNumber];
             
         } else if (indexPath.row == 2) {
-            /**-----------------------------------------------------------------------------
-             * @name Custom Left Button
-             * ----------------------------------------------------------------------------- */
+            #pragma mark - Custom left button
 
             // Set the selectable items
             NSArray *items = @[@"Apple", @"Orange", @"Peach", @"Pearl", @"Tomato"];
@@ -264,11 +230,8 @@
             [self.picker presentPickerOnView:self.view];
             
         } else if (indexPath.row == 3) {
-            
-            /**-----------------------------------------------------------------------------
-             * @name Tint Color
-             * ----------------------------------------------------------------------------- */
-            
+            #pragma mark - Tint color
+
             // Set the selectable items
             NSArray *items = @[@"Apple", @"Orange", @"Peach", @"Pearl", @"Tomato"];
             
@@ -294,8 +257,7 @@
 
 #pragma mark - <GKActionSheetPickerDelegate>
 
-- (void)actionSheetPicker:(GKActionSheetPicker *)picker didChangeValue:(id)value
-{
+- (void)actionSheetPicker:(GKActionSheetPicker *)picker didChangeValue:(id)value {
     self.delegateCellDetailLabel.text = value;
 }
 
