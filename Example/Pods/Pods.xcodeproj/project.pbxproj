@@ -41,15 +41,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		095D9ADE6CEBF1D1F803C17481013665 /* GKActionSheetPicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GKActionSheetPicker.framework; path = GKActionSheetPicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0D303D73ECB5056277FBB447114C91A4 /* GKActionSheetPicker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = GKActionSheetPicker.modulemap; sourceTree = "<group>"; };
+		095D9ADE6CEBF1D1F803C17481013665 /* GKActionSheetPicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GKActionSheetPicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D303D73ECB5056277FBB447114C91A4 /* GKActionSheetPicker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = GKActionSheetPicker.modulemap; sourceTree = "<group>"; };
 		0F67410063EF6AA907240D28C6262D2C /* Pods-GKActionSheetPicker_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GKActionSheetPicker_Example-dummy.m"; sourceTree = "<group>"; };
 		0FA3E3BE6A5ABFC89549B4D6755A2254 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		10FB135FCF2B36E89325B6C31507C194 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13EEA457639B45881E5B65F73EE5944B /* Pods-GKActionSheetPicker_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GKActionSheetPicker_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		14B88079B306299537C8B817105EE0EE /* Pods-GKActionSheetPicker_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-GKActionSheetPicker_Tests.modulemap"; sourceTree = "<group>"; };
+		14B88079B306299537C8B817105EE0EE /* Pods-GKActionSheetPicker_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-GKActionSheetPicker_Tests.modulemap"; sourceTree = "<group>"; };
 		1A7D41E04FDA38F5E9FC5462EEA585EA /* GKActionSheetPicker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = GKActionSheetPicker.m; sourceTree = "<group>"; };
-		1D9134652FF694D81385A54FD2C89A62 /* Pods_GKActionSheetPicker_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_GKActionSheetPicker_Tests.framework; path = "Pods-GKActionSheetPicker_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D9134652FF694D81385A54FD2C89A62 /* Pods_GKActionSheetPicker_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GKActionSheetPicker_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		23F0A8B5558B5FFCF066268E4116EC78 /* Pods-GKActionSheetPicker_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GKActionSheetPicker_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		2728D07BD5516D59267ADE29EE0F4A03 /* GKActionSheetPicker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GKActionSheetPicker-umbrella.h"; sourceTree = "<group>"; };
 		27C5CD86FEE06627E7AACEA1B6374314 /* Pods-GKActionSheetPicker_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GKActionSheetPicker_Tests-umbrella.h"; sourceTree = "<group>"; };
@@ -59,18 +59,18 @@
 		443A5F65EFD4BB73519981FFDDABCEE5 /* Pods-GKActionSheetPicker_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GKActionSheetPicker_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		48F089B0BFC9C34A8372B6D5BA188C37 /* Pods-GKActionSheetPicker_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GKActionSheetPicker_Example-frameworks.sh"; sourceTree = "<group>"; };
 		4D01B9A3017983D8A8DF524B5F2B9678 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		64DB65ECD39CC78BDD5773586D38518F /* Pods_GKActionSheetPicker_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_GKActionSheetPicker_Example.framework; path = "Pods-GKActionSheetPicker_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		64DB65ECD39CC78BDD5773586D38518F /* Pods_GKActionSheetPicker_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GKActionSheetPicker_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		69B0C484EE23007B5BA13E2194BEAE88 /* Pods-GKActionSheetPicker_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GKActionSheetPicker_Example-umbrella.h"; sourceTree = "<group>"; };
 		7923E1ABB218B3D0D17D253EE7E9A7EC /* Pods-GKActionSheetPicker_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GKActionSheetPicker_Tests-dummy.m"; sourceTree = "<group>"; };
 		7D815AF85A209C30CE40878A9495E6CB /* GKActionSheetPicker.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GKActionSheetPicker.xcconfig; sourceTree = "<group>"; };
-		8CF28147C44C0C8EF285CD9A8A494D64 /* Pods-GKActionSheetPicker_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-GKActionSheetPicker_Example.modulemap"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		8CF28147C44C0C8EF285CD9A8A494D64 /* Pods-GKActionSheetPicker_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-GKActionSheetPicker_Example.modulemap"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		978EB4D1D78A5695C20D66D5D1873F5E /* Pods-GKActionSheetPicker_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GKActionSheetPicker_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		986AA64A2B6F2F116DEA138E09AEEE9E /* GKActionSheetPickerItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GKActionSheetPickerItem.h; sourceTree = "<group>"; };
 		A3247817A036539C4DF1C6091E33B319 /* Pods-GKActionSheetPicker_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GKActionSheetPicker_Example-resources.sh"; sourceTree = "<group>"; };
 		C4095B90A7E5FDE1008D4FC2CD884E4D /* Pods-GKActionSheetPicker_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GKActionSheetPicker_Tests-resources.sh"; sourceTree = "<group>"; };
 		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		CBEC6358A3FCA795D4AADC9E916F7988 /* countries.json */ = {isa = PBXFileReference; includeInIndex = 1; path = countries.json; sourceTree = "<group>"; };
+		CBEC6358A3FCA795D4AADC9E916F7988 /* countries.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; path = countries.json; sourceTree = "<group>"; };
 		D64DC21BB5E1C2ED286DCA15615929E8 /* GKActionSheetPicker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GKActionSheetPicker.h; sourceTree = "<group>"; };
 		DA0C48EC8488DFF6A44ECF5B94D2DE7E /* GKActionSheetPicker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GKActionSheetPicker-prefix.pch"; sourceTree = "<group>"; };
 		DDB0B1AB92B9ED7F5CA2F03CEA01DDAC /* Pods-GKActionSheetPicker_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GKActionSheetPicker_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -128,7 +128,6 @@
 			children = (
 				BADAE4E3B43F0D33A2E14C6B2AE71F12 /* Classes */,
 			);
-			name = Pod;
 			path = Pod;
 			sourceTree = "<group>";
 		};
@@ -177,7 +176,6 @@
 				986AA64A2B6F2F116DEA138E09AEEE9E /* GKActionSheetPickerItem.h */,
 				E1C25A2F2720C754DD286B860B7384B2 /* GKActionSheetPickerItem.m */,
 			);
-			name = Classes;
 			path = Classes;
 			sourceTree = "<group>";
 		};
@@ -227,7 +225,6 @@
 			children = (
 				CBEC6358A3FCA795D4AADC9E916F7988 /* countries.json */,
 			);
-			name = Assets;
 			path = Assets;
 			sourceTree = "<group>";
 		};
@@ -247,7 +244,6 @@
 			children = (
 				DE485130A675EE6402A7AD1F78C41380 /* Assets */,
 			);
-			name = Pod;
 			path = Pod;
 			sourceTree = "<group>";
 		};
@@ -362,14 +358,15 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 1130;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
 			productRefGroup = D512CC69425C33930C121A1DE987E5FD /* Products */;
@@ -443,25 +440,38 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"POD_CONFIGURATION_DEBUG=1",
@@ -592,24 +602,37 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"POD_CONFIGURATION_RELEASE=1",
 					"$(inherited)",
