@@ -678,6 +678,7 @@ typedef NS_ENUM(NSUInteger, GKActionSheetPickerType) {
         label.numberOfLines = self.doubleLine ? 2 : 1;
         label.textAlignment = NSTextAlignmentCenter;
         label.font = [UIFont preferredFontForTextStyle:UIFontTextStyleTitle2];
+        label.lineBreakMode = NSLineBreakByTruncatingMiddle;
     }
     
     label.text = [self pickerView:pickerView titleForRow:row forComponent:component];
