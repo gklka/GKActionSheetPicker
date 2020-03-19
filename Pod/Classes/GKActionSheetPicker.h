@@ -103,7 +103,7 @@ typedef NS_ENUM(NSUInteger, GKActionSheetPickerDismissType) {
 @property (nonatomic, readonly) UIDatePicker *datePicker;
 
 //! Inner picker view object, which you can access to use its delegate and data source objects directly
-@property (nonatomic, readonly) UIDatePicker *pickerView;
+@property (nonatomic, readonly) UIPickerView *pickerView;
 
 //! Picker's delegate object
 @property (nonatomic, strong) id<GKActionSheetPickerDelegate> delegate;
