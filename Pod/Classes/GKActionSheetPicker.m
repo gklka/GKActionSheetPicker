@@ -25,11 +25,11 @@ typedef NS_ENUM(NSUInteger, GKActionSheetPickerType) {
 @property (nonatomic) GKActionSheetPickerType pickerType;
 
 //! Used when `pickerType` is `GKActionSheetPickerTypeMultiColumnString`. Stores NSArrays of `GKActionSheetPickerItem` objects
-@property (nonatomic, strong) NSArray *components;
+@property (nonatomic, strong) NSArray<NSArray<GKActionSheetPickerItem *> *> *components;
 @property (nonatomic, strong) NSArray *selections;
 
 //! Used when `pickerType` is `GKActionSheetPickerTypeString`. Stores `GKActionSheetPickerItem` objects
-@property (nonatomic, strong) NSArray *items;
+@property (nonatomic, strong) NSArray<GKActionSheetPickerItem *> *items;
 @property (nonatomic, strong) id selection;
 
 //! Used when `pickerType` is `GKActionSheetPickerTypeDate`
