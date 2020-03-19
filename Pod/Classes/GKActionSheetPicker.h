@@ -99,8 +99,11 @@ typedef NS_ENUM(NSUInteger, GKActionSheetPickerDismissType) {
 //! Returns `YES`, if the picker is currently presented.
 @property (nonatomic, readonly) BOOL isOpen;
 
-//! Inner date picker object, which you can access to set it's locale, timeZone, and other properties
+//! Inner date picker object, which you can access to set its locale, timeZone, and other properties
 @property (nonatomic, readonly) UIDatePicker *datePicker;
+
+//! Inner picker view object, which you can access to use its delegate and data source objects directly
+@property (nonatomic, readonly) UIDatePicker *pickerView;
 
 //! Picker's delegate object
 @property (nonatomic, strong) id<GKActionSheetPickerDelegate> delegate;
