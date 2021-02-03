@@ -268,7 +268,7 @@ typedef NS_ENUM(NSUInteger, GKActionSheetPickerType) {
         _datePicker.tintColor = self.tintColor;
         if (@available(iOS 13.4, *)) {
             _datePicker.preferredDatePickerStyle = UIDatePickerStyleWheels;
-        }
+        } 
     }
     
     return _datePicker;
